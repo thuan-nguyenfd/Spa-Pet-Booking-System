@@ -1,0 +1,35 @@
+# Java / Maven
+backend/target/
+*.class
+*.jar
+!backend/.mvn/wrapper/maven-wrapper.jar
+logs/
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Locally uploaded media (keep the upload directories in Git)
+/uploads/**
+!/uploads/README.md
+!/uploads/pets/
+!/uploads/pets/.gitkeep
+!/uploads/services/
+!/uploads/services/.gitkeep
+
+# Environment and local configuration
+.env
+.env.*
+!.env.example
+application-local.yml
+application-local.properties
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
