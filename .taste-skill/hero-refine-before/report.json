@@ -1,0 +1,3289 @@
+{
+ "url": "http://127.0.0.1:5173/",
+ "at": "2026-10-24T01:09:40.811Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1920,
+   "height": 1200,
+   "load": "load",
+   "screens": 4,
+   "filled": [
+    0.86,
+    0.86,
+    0.46,
+    0.46
+   ],
+   "motion": {
+    "elements": 13,
+    "css": 11,
+    "transitions": 2,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1920,
+     "h": 1200
+    },
+    "page": {
+     "height": 4085,
+     "screens": 3.4,
+     "words": 429,
+     "img": 4,
+     "video": 0,
+     "canvas": 1,
+     "svg": 22,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "dog-shower-animal-photography.webp",
+      "white-shih-tzu-trimmed.jpg",
+      "brushing-out-the-pyrenees-2.jpg",
+      "sage-mix.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Boss sạch thơm, sen an tâm.",
+     "words": 6,
+     "chars": 27,
+     "lines": 2,
+     "size": 108,
+     "vw": 5.6,
+     "font": "General Sans",
+     "weight": 700,
+     "tracking": -0.075,
+     "leading": 0.98,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.46,
+     "top": 216,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Boss sạch thơm, sen an tâm.",
+     "words": 6,
+     "lines": 2,
+     "size": 108,
+     "font": "General Sans"
+    },
+    "headings": [
+     {
+      "text": "Boss sạch thơm, sen an tâm.",
+      "words": 6,
+      "chars": 27,
+      "lines": 2,
+      "size": 108,
+      "vw": 5.6,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.075,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.46,
+      "top": 216,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Dịch vụ cho boss",
+      "words": 4,
+      "chars": 16,
+      "lines": 1,
+      "size": 56,
+      "vw": 2.9,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.065,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.57,
+      "top": 862,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Chăm sóc dịu dàng",
+      "words": 4,
+      "chars": 17,
+      "lines": 1,
+      "size": 56,
+      "vw": 2.9,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.065,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.24,
+      "top": 2573,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Lời khách kể",
+      "words": 3,
+      "chars": 12,
+      "lines": 1,
+      "size": 56,
+      "vw": 2.9,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.065,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.24,
+      "top": 3043,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "MEOMEO",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 80,
+      "vw": 4.2,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.09,
+      "leading": 0.82,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 3765,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 5,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "General Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      14,
+      16,
+      20,
+      24,
+      27,
+      36,
+      56,
+      80,
+      108
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "General Sans",
+      "size": 16,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.1
+     },
+     "measureChars": 42,
+     "max": {
+      "size": 108,
+      "vw": 5.6,
+      "font": "General Sans",
+      "text": "Boss sạch thơm,sen an tâm."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffe8b4",
+       "top": 76,
+       "hsl": {
+        "h": 42,
+        "s": 1,
+        "l": 0.85
+       }
+      },
+      {
+       "color": "#fed519",
+       "top": 2463,
+       "hsl": {
+        "h": 49,
+        "s": 0.99,
+        "l": 0.55
+       }
+      },
+      {
+       "color": "#302e27",
+       "top": 3685,
+       "hsl": {
+        "h": 47,
+        "s": 0.1,
+        "l": 0.17
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#ffffff",
+       "share": 0.4
+      },
+      {
+       "color": "#28251e",
+       "share": 0.19
+      },
+      {
+       "color": "#fed519",
+       "share": 0.13
+      },
+      {
+       "color": "#5d584c",
+       "share": 0.12
+      },
+      {
+       "color": "#504519",
+       "share": 0.09
+      }
+     ],
+     "button": {
+      "bg": "#1a1814",
+      "hsl": {
+       "h": 40,
+       "s": 0.13,
+       "l": 0.09
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 5,
+     "inHero": 1,
+     "radius": 0,
+     "height": 29,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Đặt hẹn ngay ↗"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 1,
+     "scrims": 4,
+     "gradientSamples": [
+      "section.hero → linear-gradient(90deg, rgba(255, 255, 255, 0.14) 0px, rgba(255, 255, 255, 0.14) calc(64% - 345px), rgba(0, 0, "
+     ],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 1,
+     "boxRadius": 8,
+     "squareMedia": 5,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 950
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "canvas",
+      "ratio": 0.21
+     },
+     {
+      "type": "img",
+      "ratio": 0.19
+     }
+    ],
+    "nav": {
+     "links": 7,
+     "fixed": true,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "general sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1920,
+     "h": 1200
+    },
+    "pageH": 4085,
+    "margins": {
+     "left": 60,
+     "right": 100
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 76,
+      "height": 690,
+      "words": 31,
+      "media": 1,
+      "middle": 284,
+      "heading": {
+       "text": "Boss sạch thơm,",
+       "size": 108,
+       "tag": "h1"
+      },
+      "left": 40,
+      "right": 135,
+      "textLeft": 40,
+      "textRight": 1109,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#services.services-section.page-gutter",
+      "tag": "section",
+      "top": 766,
+      "height": 1697,
+      "words": 153,
+      "media": 4,
+      "middle": 0,
+      "heading": {
+       "text": "Dịch vụ cho boss",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 100,
+      "right": 100,
+      "textLeft": 100,
+      "textRight": 120,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.about-section",
+      "tag": "section",
+      "top": 2463,
+      "height": 456,
+      "words": 81,
+      "media": 0,
+      "middle": 266,
+      "heading": {
+       "text": "Chăm sóc dịu dàng",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 100,
+      "right": 304,
+      "textLeft": 100,
+      "textRight": 304,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.reviews-section.page-gutter",
+      "tag": "section",
+      "top": 2918,
+      "height": 767,
+      "words": 70,
+      "media": 0,
+      "middle": 334,
+      "heading": {
+       "text": "Lời khách kể",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 100,
+      "right": 647,
+      "textLeft": 100,
+      "textRight": 647,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer#contact.site-footer.page-gutter",
+      "tag": "footer",
+      "top": 3685,
+      "height": 400,
+      "words": 98,
+      "media": 0,
+      "middle": 271,
+      "heading": {
+       "text": "MEOMEO",
+       "size": 80,
+       "tag": "h2"
+      },
+      "left": 60,
+      "right": 60,
+      "textLeft": 60,
+      "textRight": 60,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Boss sạch thơm, sen an tâm.",
+      "size": 108,
+      "top": 216,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 100,
+      "n": 5
+     },
+     {
+      "x": 154,
+      "n": 4
+     },
+     {
+      "x": 40,
+      "n": 3
+     },
+     {
+      "x": 1221,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 13,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.07,
+    "voidBox": {
+     "x": 0,
+     "y": 640,
+     "w": 1040,
+     "h": 160
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 1600,
+   "height": 1000,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.82,
+    0.86,
+    0.78,
+    0.46,
+    0.48
+   ],
+   "motion": {
+    "elements": 12,
+    "css": 11,
+    "transitions": 1,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1600,
+     "h": 1000
+    },
+    "page": {
+     "height": 4085,
+     "screens": 4.1,
+     "words": 429,
+     "img": 4,
+     "video": 0,
+     "canvas": 1,
+     "svg": 22,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "dog-shower-animal-photography.webp",
+      "white-shih-tzu-trimmed.jpg",
+      "brushing-out-the-pyrenees-2.jpg",
+      "sage-mix.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Boss sạch thơm, sen an tâm.",
+     "words": 6,
+     "chars": 27,
+     "lines": 3,
+     "size": 108,
+     "vw": 6.8,
+     "font": "General Sans",
+     "weight": 700,
+     "tracking": -0.075,
+     "leading": 0.98,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.46,
+     "top": 163,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Boss sạch thơm, sen an tâm.",
+     "words": 6,
+     "lines": 3,
+     "size": 108,
+     "font": "General Sans"
+    },
+    "headings": [
+     {
+      "text": "Boss sạch thơm, sen an tâm.",
+      "words": 6,
+      "chars": 27,
+      "lines": 3,
+      "size": 108,
+      "vw": 6.8,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.075,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.46,
+      "top": 163,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Dịch vụ cho boss",
+      "words": 4,
+      "chars": 16,
+      "lines": 1,
+      "size": 56,
+      "vw": 3.5,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.065,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.6,
+      "top": 862,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Tắm thơm & sấy lông",
+      "words": 5,
+      "chars": 19,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.3,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.055,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.25,
+      "top": 1061,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Cắt tỉa tạo kiểu",
+      "words": 4,
+      "chars": 16,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.3,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.055,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.25,
+      "top": 1417,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Chải lông & gỡ rối",
+      "words": 5,
+      "chars": 18,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.3,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.055,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.25,
+      "top": 1773,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Gói chăm sóc trọn buổi",
+      "words": 5,
+      "chars": 22,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.3,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.055,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.25,
+      "top": 2129,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Chăm sóc dịu dàng",
+      "words": 4,
+      "chars": 17,
+      "lines": 1,
+      "size": 56,
+      "vw": 3.5,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.065,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.29,
+      "top": 2573,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Lời khách kể",
+      "words": 3,
+      "chars": 12,
+      "lines": 1,
+      "size": 56,
+      "vw": 3.5,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.065,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.29,
+      "top": 3043,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "MEOMEO",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 80,
+      "vw": 5,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.09,
+      "leading": 0.82,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 3765,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 9,
+     "maxLines": 3,
+     "over2Lines": 1,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "General Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      14,
+      16,
+      20,
+      24,
+      27,
+      36,
+      56,
+      80,
+      108
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "General Sans",
+      "size": 16,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.1
+     },
+     "measureChars": 42,
+     "max": {
+      "size": 108,
+      "vw": 6.8,
+      "font": "General Sans",
+      "text": "Boss sạch thơm,sen an tâm."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffe8b4",
+       "top": 76,
+       "hsl": {
+        "h": 42,
+        "s": 1,
+        "l": 0.85
+       }
+      },
+      {
+       "color": "#675d4d",
+       "top": 950,
+       "hsl": {
+        "h": 37,
+        "s": 0.14,
+        "l": 0.35
+       }
+      },
+      {
+       "color": "#fed519",
+       "top": 2463,
+       "hsl": {
+        "h": 49,
+        "s": 0.99,
+        "l": 0.55
+       }
+      },
+      {
+       "color": "#302e27",
+       "top": 3685,
+       "hsl": {
+        "h": 47,
+        "s": 0.1,
+        "l": 0.17
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#ffffff",
+       "share": 0.4
+      },
+      {
+       "color": "#28251e",
+       "share": 0.19
+      },
+      {
+       "color": "#fed519",
+       "share": 0.13
+      },
+      {
+       "color": "#5d584c",
+       "share": 0.12
+      },
+      {
+       "color": "#504519",
+       "share": 0.09
+      }
+     ],
+     "button": {
+      "bg": "#1a1814",
+      "hsl": {
+       "h": 40,
+       "s": 0.13,
+       "l": 0.09
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 5,
+     "inHero": 1,
+     "radius": 0,
+     "height": 29,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Đặt hẹn ngay ↗"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 1,
+     "scrims": 4,
+     "gradientSamples": [
+      "section.hero → linear-gradient(90deg, rgba(255, 255, 255, 0.14) 0px, rgba(255, 255, 255, 0.14) calc(64% - 345px), rgba(0, 0, "
+     ],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 1,
+     "boxRadius": 8,
+     "squareMedia": 5,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "canvas",
+      "ratio": 0.3
+     }
+    ],
+    "nav": {
+     "links": 7,
+     "fixed": true,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "general sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1600,
+     "h": 1000
+    },
+    "pageH": 4085,
+    "margins": {
+     "left": 38,
+     "right": 38
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 76,
+      "height": 690,
+      "words": 31,
+      "media": 1,
+      "middle": 153,
+      "heading": {
+       "text": "Boss sạch thơm,",
+       "size": 108,
+       "tag": "h1"
+      },
+      "left": 40,
+      "right": 55,
+      "textLeft": 40,
+      "textRight": 898,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#services.services-section.page-gutter",
+      "tag": "section",
+      "top": 766,
+      "height": 1697,
+      "words": 153,
+      "media": 4,
+      "middle": 0,
+      "heading": {
+       "text": "Dịch vụ cho boss",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 38,
+      "right": 38,
+      "textLeft": 38,
+      "textRight": 58,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.about-section",
+      "tag": "section",
+      "top": 2463,
+      "height": 456,
+      "words": 81,
+      "media": 0,
+      "middle": 193,
+      "heading": {
+       "text": "Chăm sóc dịu dàng",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 38,
+      "right": 181,
+      "textLeft": 38,
+      "textRight": 181,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.reviews-section.page-gutter",
+      "tag": "section",
+      "top": 2918,
+      "height": 767,
+      "words": 70,
+      "media": 0,
+      "middle": 265,
+      "heading": {
+       "text": "Lời khách kể",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 38,
+      "right": 457,
+      "textLeft": 38,
+      "textRight": 457,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer#contact.site-footer.page-gutter",
+      "tag": "footer",
+      "top": 3685,
+      "height": 400,
+      "words": 98,
+      "media": 0,
+      "middle": 160,
+      "heading": {
+       "text": "MEOMEO",
+       "size": 80,
+       "tag": "h2"
+      },
+      "left": 38,
+      "right": 38,
+      "textLeft": 38,
+      "textRight": 38,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Boss sạch thơm, sen an tâm.",
+      "size": 108,
+      "top": 163,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 38,
+      "n": 8
+     },
+     {
+      "x": 92,
+      "n": 4
+     },
+     {
+      "x": 1032,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 13,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.07,
+    "voidBox": {
+     "x": 0,
+     "y": 667,
+     "w": 800,
+     "h": 133
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.9,
+    0.8,
+    0.76,
+    0.35,
+    0.57
+   ],
+   "motion": {
+    "elements": 12,
+    "css": 11,
+    "transitions": 1,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 4085,
+     "screens": 4.5,
+     "words": 429,
+     "img": 4,
+     "video": 0,
+     "canvas": 1,
+     "svg": 22,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "dog-shower-animal-photography.webp",
+      "white-shih-tzu-trimmed.jpg",
+      "brushing-out-the-pyrenees-2.jpg",
+      "sage-mix.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Boss sạch thơm, sen an tâm.",
+     "words": 6,
+     "chars": 27,
+     "lines": 3,
+     "size": 108,
+     "vw": 7.5,
+     "font": "General Sans",
+     "weight": 700,
+     "tracking": -0.075,
+     "leading": 0.98,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.45,
+     "top": 163,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Boss sạch thơm, sen an tâm.",
+     "words": 6,
+     "lines": 3,
+     "size": 108,
+     "font": "General Sans"
+    },
+    "headings": [
+     {
+      "text": "Boss sạch thơm, sen an tâm.",
+      "words": 6,
+      "chars": 27,
+      "lines": 3,
+      "size": 108,
+      "vw": 7.5,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.075,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 163,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Dịch vụ cho boss",
+      "words": 4,
+      "chars": 16,
+      "lines": 1,
+      "size": 56,
+      "vw": 3.9,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.065,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.6,
+      "top": 862,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Tắm thơm & sấy lông",
+      "words": 5,
+      "chars": 19,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.055,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.28,
+      "top": 1061,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Cắt tỉa tạo kiểu",
+      "words": 4,
+      "chars": 16,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.055,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.28,
+      "top": 1417,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Chải lông & gỡ rối",
+      "words": 5,
+      "chars": 18,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.055,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.28,
+      "top": 1773,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Gói chăm sóc trọn buổi",
+      "words": 5,
+      "chars": 22,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.055,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.28,
+      "top": 2129,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Chăm sóc dịu dàng",
+      "words": 4,
+      "chars": 17,
+      "lines": 1,
+      "size": 56,
+      "vw": 3.9,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.065,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.32,
+      "top": 2573,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Lời khách kể",
+      "words": 3,
+      "chars": 12,
+      "lines": 1,
+      "size": 56,
+      "vw": 3.9,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.065,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.31,
+      "top": 3043,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "MEOMEO",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 80,
+      "vw": 5.6,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.09,
+      "leading": 0.82,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 3765,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 9,
+     "maxLines": 3,
+     "over2Lines": 1,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "General Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      14,
+      16,
+      20,
+      24,
+      27,
+      36,
+      56,
+      80,
+      108
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "General Sans",
+      "size": 16,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.1
+     },
+     "measureChars": 42,
+     "max": {
+      "size": 108,
+      "vw": 7.5,
+      "font": "General Sans",
+      "text": "Boss sạch thơm,sen an tâm."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffe8b4",
+       "top": 76,
+       "hsl": {
+        "h": 42,
+        "s": 1,
+        "l": 0.85
+       }
+      },
+      {
+       "color": "#675d4d",
+       "top": 950,
+       "hsl": {
+        "h": 37,
+        "s": 0.14,
+        "l": 0.35
+       }
+      },
+      {
+       "color": "#fed519",
+       "top": 2463,
+       "hsl": {
+        "h": 49,
+        "s": 0.99,
+        "l": 0.55
+       }
+      },
+      {
+       "color": "#302e27",
+       "top": 3685,
+       "hsl": {
+        "h": 47,
+        "s": 0.1,
+        "l": 0.17
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#ffffff",
+       "share": 0.4
+      },
+      {
+       "color": "#28251e",
+       "share": 0.19
+      },
+      {
+       "color": "#fed519",
+       "share": 0.13
+      },
+      {
+       "color": "#5d584c",
+       "share": 0.12
+      },
+      {
+       "color": "#504519",
+       "share": 0.09
+      }
+     ],
+     "button": {
+      "bg": "#1a1814",
+      "hsl": {
+       "h": 40,
+       "s": 0.13,
+       "l": 0.09
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 5,
+     "inHero": 1,
+     "radius": 0,
+     "height": 29,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Đặt hẹn ngay ↗"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 1,
+     "scrims": 4,
+     "gradientSamples": [
+      "section.hero → linear-gradient(90deg, rgba(255, 255, 255, 0.14) 0px, rgba(255, 255, 255, 0.14) calc(64% - 345px), rgba(0, 0, "
+     ],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 1,
+     "boxRadius": 8,
+     "squareMedia": 5,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "canvas",
+      "ratio": 0.37
+     }
+    ],
+    "nav": {
+     "links": 7,
+     "fixed": true,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "general sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 4085,
+    "margins": {
+     "left": 35,
+     "right": 35
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 76,
+      "height": 690,
+      "words": 31,
+      "media": 1,
+      "middle": 64,
+      "heading": {
+       "text": "Boss sạch thơm,",
+       "size": 108,
+       "tag": "h1"
+      },
+      "left": 40,
+      "right": 15,
+      "textLeft": 40,
+      "textRight": 769,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#services.services-section.page-gutter",
+      "tag": "section",
+      "top": 766,
+      "height": 1697,
+      "words": 153,
+      "media": 4,
+      "middle": 0,
+      "heading": {
+       "text": "Dịch vụ cho boss",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 35,
+      "right": 35,
+      "textLeft": 35,
+      "textRight": 55,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.about-section",
+      "tag": "section",
+      "top": 2463,
+      "height": 456,
+      "words": 81,
+      "media": 0,
+      "middle": 132,
+      "heading": {
+       "text": "Chăm sóc dịu dàng",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 35,
+      "right": 131,
+      "textLeft": 35,
+      "textRight": 131,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.reviews-section.page-gutter",
+      "tag": "section",
+      "top": 2918,
+      "height": 767,
+      "words": 70,
+      "media": 0,
+      "middle": 203,
+      "heading": {
+       "text": "Lời khách kể",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 35,
+      "right": 363,
+      "textLeft": 35,
+      "textRight": 363,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer#contact.site-footer.page-gutter",
+      "tag": "footer",
+      "top": 3685,
+      "height": 400,
+      "words": 98,
+      "media": 0,
+      "middle": 121,
+      "heading": {
+       "text": "MEOMEO",
+       "size": 80,
+       "tag": "h2"
+      },
+      "left": 35,
+      "right": 35,
+      "textLeft": 35,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Boss sạch thơm, sen an tâm.",
+      "size": 108,
+      "top": 163,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 35,
+      "n": 8
+     },
+     {
+      "x": 89,
+      "n": 4
+     },
+     {
+      "x": 930,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 13,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.07,
+    "voidBox": {
+     "x": 0,
+     "y": 720,
+     "w": 720,
+     "h": 120
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 1366,
+   "height": 854,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.87,
+    0.74,
+    0.82,
+    0.44,
+    0.57
+   ],
+   "motion": {
+    "elements": 13,
+    "css": 11,
+    "transitions": 2,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1366,
+     "h": 854
+    },
+    "page": {
+     "height": 4029,
+     "screens": 4.7,
+     "words": 429,
+     "img": 4,
+     "video": 0,
+     "canvas": 1,
+     "svg": 22,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "dog-shower-animal-photography.webp",
+      "white-shih-tzu-trimmed.jpg",
+      "brushing-out-the-pyrenees-2.jpg",
+      "sage-mix.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Boss sạch thơm, sen an tâm.",
+     "words": 6,
+     "chars": 27,
+     "lines": 3,
+     "size": 102.5,
+     "vw": 7.5,
+     "font": "General Sans",
+     "weight": 700,
+     "tracking": -0.075,
+     "leading": 0.98,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.45,
+     "top": 172,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Boss sạch thơm, sen an tâm.",
+     "words": 6,
+     "lines": 3,
+     "size": 102.5,
+     "font": "General Sans"
+    },
+    "headings": [
+     {
+      "text": "Boss sạch thơm, sen an tâm.",
+      "words": 6,
+      "chars": 27,
+      "lines": 3,
+      "size": 102.5,
+      "vw": 7.5,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.075,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 172,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Tắm, sấy và chăm lông dịu nhẹ. Dịch vụ có thời lượng rõ ràng, giá tính theo cân nặng.",
+      "words": 19,
+      "chars": 85,
+      "lines": 2,
+      "size": 27,
+      "vw": 2,
+      "font": "General Sans",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.55,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 498,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Đặt hẹn ngay ↗",
+      "words": 4,
+      "chars": 14,
+      "lines": 1,
+      "size": 27,
+      "vw": 2,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.16,
+      "top": 612,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Dịch vụ cho boss",
+      "words": 4,
+      "chars": 16,
+      "lines": 1,
+      "size": 56,
+      "vw": 4.1,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.065,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.6,
+      "top": 862,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Tắm thơm & sấy lông",
+      "words": 5,
+      "chars": 19,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.6,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.055,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.29,
+      "top": 1055,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Cắt tỉa tạo kiểu",
+      "words": 4,
+      "chars": 16,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.6,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.055,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.29,
+      "top": 1399,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Chải lông & gỡ rối",
+      "words": 5,
+      "chars": 18,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.6,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.055,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.29,
+      "top": 1743,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Gói chăm sóc trọn buổi",
+      "words": 5,
+      "chars": 22,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.6,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.055,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.29,
+      "top": 2087,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Chăm sóc dịu dàng",
+      "words": 4,
+      "chars": 17,
+      "lines": 2,
+      "size": 56,
+      "vw": 4.1,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.065,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.33,
+      "top": 2523,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Lời khách kể",
+      "words": 3,
+      "chars": 12,
+      "lines": 1,
+      "size": 56,
+      "vw": 4.1,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.065,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.31,
+      "top": 2991,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "MEOMEO",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 80,
+      "vw": 5.9,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.09,
+      "leading": 0.82,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 3710,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 11,
+     "maxLines": 3,
+     "over2Lines": 1,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "General Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      14,
+      16,
+      20,
+      24,
+      27,
+      36,
+      56,
+      80,
+      103
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "General Sans",
+      "size": 16,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.1
+     },
+     "measureChars": 42,
+     "max": {
+      "size": 102.5,
+      "vw": 7.5,
+      "font": "General Sans",
+      "text": "Boss sạch thơm,sen an tâm."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffe8b4",
+       "top": 76,
+       "hsl": {
+        "h": 42,
+        "s": 1,
+        "l": 0.85
+       }
+      },
+      {
+       "color": "#675d4d",
+       "top": 950,
+       "hsl": {
+        "h": 37,
+        "s": 0.14,
+        "l": 0.35
+       }
+      },
+      {
+       "color": "#fed519",
+       "top": 2414,
+       "hsl": {
+        "h": 49,
+        "s": 0.99,
+        "l": 0.55
+       }
+      },
+      {
+       "color": "#302e27",
+       "top": 3630,
+       "hsl": {
+        "h": 47,
+        "s": 0.1,
+        "l": 0.17
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#ffffff",
+       "share": 0.4
+      },
+      {
+       "color": "#28251e",
+       "share": 0.19
+      },
+      {
+       "color": "#fed519",
+       "share": 0.13
+      },
+      {
+       "color": "#5d584c",
+       "share": 0.12
+      },
+      {
+       "color": "#504519",
+       "share": 0.09
+      }
+     ],
+     "button": {
+      "bg": "#1a1814",
+      "hsl": {
+       "h": 40,
+       "s": 0.13,
+       "l": 0.09
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 5,
+     "inHero": 1,
+     "radius": 0,
+     "height": 29,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Đặt hẹn ngay ↗"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 1,
+     "scrims": 4,
+     "gradientSamples": [
+      "section.hero → linear-gradient(90deg, rgba(255, 255, 255, 0.14) 0px, rgba(255, 255, 255, 0.14) calc(64% - 341.5px), rgba(0, 0"
+     ],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 1,
+     "boxRadius": 8,
+     "squareMedia": 5,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "canvas",
+      "ratio": 0.4
+     }
+    ],
+    "nav": {
+     "links": 7,
+     "fixed": true,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "general sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1366,
+     "h": 854
+    },
+    "pageH": 4029,
+    "margins": {
+     "left": 33,
+     "right": 33
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 76,
+      "height": 690,
+      "words": 31,
+      "media": 1,
+      "middle": 88,
+      "heading": {
+       "text": "Boss sạch thơm,",
+       "size": 102,
+       "tag": "h1"
+      },
+      "left": 38,
+      "right": 0,
+      "textLeft": 38,
+      "textRight": 771,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#services.services-section.page-gutter",
+      "tag": "section",
+      "top": 766,
+      "height": 1648,
+      "words": 153,
+      "media": 4,
+      "middle": 0,
+      "heading": {
+       "text": "Dịch vụ cho boss",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 33,
+      "right": 33,
+      "textLeft": 33,
+      "textRight": 53,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.about-section",
+      "tag": "section",
+      "top": 2414,
+      "height": 454,
+      "words": 81,
+      "media": 0,
+      "middle": 185,
+      "heading": {
+       "text": "Chăm sóc dịu dàng",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 33,
+      "right": 109,
+      "textLeft": 33,
+      "textRight": 109,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.reviews-section.page-gutter",
+      "tag": "section",
+      "top": 2868,
+      "height": 762,
+      "words": 70,
+      "media": 0,
+      "middle": 175,
+      "heading": {
+       "text": "Lời khách kể",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 33,
+      "right": 319,
+      "textLeft": 33,
+      "textRight": 319,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer#contact.site-footer.page-gutter",
+      "tag": "footer",
+      "top": 3630,
+      "height": 400,
+      "words": 98,
+      "media": 0,
+      "middle": 111,
+      "heading": {
+       "text": "MEOMEO",
+       "size": 80,
+       "tag": "h2"
+      },
+      "left": 33,
+      "right": 33,
+      "textLeft": 33,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Boss sạch thơm, sen an tâm.",
+      "size": 102,
+      "top": 172,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 33,
+      "n": 8
+     },
+     {
+      "x": 87,
+      "n": 4
+     },
+     {
+      "x": 883,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 13,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.1,
+    "voidBox": {
+     "x": 0,
+     "y": 683,
+     "w": 683,
+     "h": 171
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 1280,
+   "height": 800,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.93,
+    0.85,
+    0.81,
+    0.53,
+    0.63
+   ],
+   "motion": {
+    "elements": 13,
+    "css": 11,
+    "transitions": 2,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1280,
+     "h": 800
+    },
+    "page": {
+     "height": 3931,
+     "screens": 4.9,
+     "words": 429,
+     "img": 4,
+     "video": 0,
+     "canvas": 1,
+     "svg": 22,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "dog-shower-animal-photography.webp",
+      "white-shih-tzu-trimmed.jpg",
+      "brushing-out-the-pyrenees-2.jpg",
+      "sage-mix.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Boss sạch thơm, sen an tâm.",
+     "words": 6,
+     "chars": 27,
+     "lines": 3,
+     "size": 96,
+     "vw": 7.5,
+     "font": "General Sans",
+     "weight": 700,
+     "tracking": -0.075,
+     "leading": 0.98,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.45,
+     "top": 181,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Boss sạch thơm, sen an tâm.",
+     "words": 6,
+     "lines": 3,
+     "size": 96,
+     "font": "General Sans"
+    },
+    "headings": [
+     {
+      "text": "Boss sạch thơm, sen an tâm.",
+      "words": 6,
+      "chars": 27,
+      "lines": 3,
+      "size": 96,
+      "vw": 7.5,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.075,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 181,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Tắm, sấy và chăm lông dịu nhẹ. Dịch vụ có thời lượng rõ ràng, giá tính theo cân nặng.",
+      "words": 19,
+      "chars": 85,
+      "lines": 2,
+      "size": 27,
+      "vw": 2.1,
+      "font": "General Sans",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.55,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 488,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Đặt hẹn ngay ↗",
+      "words": 4,
+      "chars": 14,
+      "lines": 1,
+      "size": 27,
+      "vw": 2.1,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.17,
+      "top": 603,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Dịch vụ cho boss",
+      "words": 4,
+      "chars": 16,
+      "lines": 1,
+      "size": 56,
+      "vw": 4.4,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.065,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.6,
+      "top": 862,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Tắm thơm & sấy lông",
+      "words": 5,
+      "chars": 19,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.8,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.055,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.31,
+      "top": 1045,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Cắt tỉa tạo kiểu",
+      "words": 4,
+      "chars": 16,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.8,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.055,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.31,
+      "top": 1368,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Chải lông & gỡ rối",
+      "words": 5,
+      "chars": 18,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.8,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.055,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.31,
+      "top": 1691,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Gói chăm sóc trọn buổi",
+      "words": 5,
+      "chars": 22,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.8,
+      "font": "General Sans",
+      "weight": 600,
+      "tracking": -0.055,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.31,
+      "top": 2014,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Chăm sóc dịu dàng",
+      "words": 4,
+      "chars": 17,
+      "lines": 2,
+      "size": 56,
+      "vw": 4.4,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.065,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.33,
+      "top": 2434,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Lời khách kể",
+      "words": 3,
+      "chars": 12,
+      "lines": 1,
+      "size": 56,
+      "vw": 4.4,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.065,
+      "leading": 1.03,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.31,
+      "top": 2887,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "MEOMEO",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 80,
+      "vw": 6.3,
+      "font": "General Sans",
+      "weight": 700,
+      "tracking": -0.09,
+      "leading": 0.82,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 3597,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 11,
+     "maxLines": 3,
+     "over2Lines": 1,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "General Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      14,
+      16,
+      20,
+      24,
+      27,
+      36,
+      56,
+      80,
+      96
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "General Sans",
+      "size": 16,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.1
+     },
+     "measureChars": 42,
+     "max": {
+      "size": 96,
+      "vw": 7.5,
+      "font": "General Sans",
+      "text": "Boss sạch thơm,sen an tâm."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffe8b4",
+       "top": 76,
+       "hsl": {
+        "h": 42,
+        "s": 1,
+        "l": 0.85
+       }
+      },
+      {
+       "color": "#675d4d",
+       "top": 950,
+       "hsl": {
+        "h": 37,
+        "s": 0.14,
+        "l": 0.35
+       }
+      },
+      {
+       "color": "#fed519",
+       "top": 2331,
+       "hsl": {
+        "h": 49,
+        "s": 0.99,
+        "l": 0.55
+       }
+      },
+      {
+       "color": "#302e27",
+       "top": 3517,
+       "hsl": {
+        "h": 47,
+        "s": 0.1,
+        "l": 0.17
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#ffffff",
+       "share": 0.4
+      },
+      {
+       "color": "#28251e",
+       "share": 0.19
+      },
+      {
+       "color": "#fed519",
+       "share": 0.13
+      },
+      {
+       "color": "#5d584c",
+       "share": 0.12
+      },
+      {
+       "color": "#504519",
+       "share": 0.09
+      }
+     ],
+     "button": {
+      "bg": "#1a1814",
+      "hsl": {
+       "h": 40,
+       "s": 0.13,
+       "l": 0.09
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 5,
+     "inHero": 1,
+     "radius": 0,
+     "height": 29,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Đặt hẹn ngay ↗"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 1,
+     "scrims": 4,
+     "gradientSamples": [
+      "section.hero → linear-gradient(90deg, rgba(255, 255, 255, 0.14) 0px, rgba(255, 255, 255, 0.14) calc(64% - 320px), rgba(0, 0, "
+     ],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 1,
+     "boxRadius": 8,
+     "squareMedia": 5,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "canvas",
+      "ratio": 0.4
+     }
+    ],
+    "nav": {
+     "links": 7,
+     "fixed": true,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "general sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1280,
+     "h": 800
+    },
+    "pageH": 3931,
+    "margins": {
+     "left": 31,
+     "right": 31
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 76,
+      "height": 690,
+      "words": 31,
+      "media": 1,
+      "middle": 48,
+      "heading": {
+       "text": "Boss sạch thơm,",
+       "size": 96,
+       "tag": "h1"
+      },
+      "left": 36,
+      "right": 0,
+      "textLeft": 36,
+      "textRight": 688,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#services.services-section.page-gutter",
+      "tag": "section",
+      "top": 766,
+      "height": 1565,
+      "words": 153,
+      "media": 4,
+      "middle": 0,
+      "heading": {
+       "text": "Dịch vụ cho boss",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 31,
+      "textLeft": 31,
+      "textRight": 51,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.about-section",
+      "tag": "section",
+      "top": 2331,
+      "height": 440,
+      "words": 81,
+      "media": 0,
+      "middle": 150,
+      "heading": {
+       "text": "Chăm sóc dịu dàng",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 83,
+      "textLeft": 31,
+      "textRight": 83,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.reviews-section.page-gutter",
+      "tag": "section",
+      "top": 2772,
+      "height": 745,
+      "words": 70,
+      "media": 0,
+      "middle": 142,
+      "heading": {
+       "text": "Lời khách kể",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 268,
+      "textLeft": 31,
+      "textRight": 268,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer#contact.site-footer.page-gutter",
+      "tag": "footer",
+      "top": 3517,
+      "height": 414,
+      "words": 98,
+      "media": 0,
+      "middle": 100,
+      "heading": {
+       "text": "MEOMEO",
+       "size": 80,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 31,
+      "textLeft": 31,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Boss sạch thơm, sen an tâm.",
+      "size": 96,
+      "top": 181,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 31,
+      "n": 8
+     },
+     {
+      "x": 82,
+      "n": 4
+     },
+     {
+      "x": 828,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 13,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.07,
+    "voidBox": {
+     "x": 0,
+     "y": 693,
+     "w": 640,
+     "h": 107
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "gradient",
+   "width": 1920,
+   "message": "1 gradient fill(s): section.hero → linear-gradient(90deg, rgba(255, 255, 255, 0.14) 0px, rgba(255, 255, 255, 0.14) calc(64% - 345px), rgba(0, 0, ",
+   "fix": "Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.",
+   "alsoAt": [
+    1600,
+    1440,
+    1366,
+    1280
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1920,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject.",
+   "alsoAt": [
+    1600,
+    1440,
+    1366,
+    1280
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "off-centre",
+   "width": 1920,
+   "message": "The margins differ: 60px on the left, 100px on the right, at 1920px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page."
+  },
+  {
+   "level": "WARN",
+   "id": "still-page",
+   "width": 1920,
+   "message": "Little motion: 13 element(s) moved while the page loaded and scrolled.",
+   "fix": "Give every section an entrance for its parts (not one fade of the whole block) and add one moving picture: a looping clip or a slow move on a photograph.",
+   "alsoAt": [
+    1600,
+    1440,
+    1366,
+    1280
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 1600,
+   "message": "1 headline(s) wrap past two lines at 1600px: \"Boss sạch thơm, sen an tâm.\" → 3 lines (6 words, 108px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 36px or less."
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 1440,
+   "message": "1 headline(s) wrap past two lines at 1440px: \"Boss sạch thơm, sen an tâm.\" → 3 lines (6 words, 108px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 36px or less."
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 1366,
+   "message": "1 headline(s) wrap past two lines at 1366px: \"Boss sạch thơm, sen an tâm.\" → 3 lines (6 words, 102.5px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 36px or less."
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 1280,
+   "message": "1 headline(s) wrap past two lines at 1280px: \"Boss sạch thơm, sen an tâm.\" → 3 lines (6 words, 96px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 36px or less."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1920,
+   "fold": "D:\\HK1_NAM_4\\J2EE\\Spa-Pet-Booking-System\\.taste-skill\\hero-refine-before\\desktop-fold.jpg",
+   "pages": [
+    "D:\\HK1_NAM_4\\J2EE\\Spa-Pet-Booking-System\\.taste-skill\\hero-refine-before\\desktop-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "desktop",
+   "width": 1600,
+   "fold": "D:\\HK1_NAM_4\\J2EE\\Spa-Pet-Booking-System\\.taste-skill\\hero-refine-before\\desktop-fold.jpg",
+   "pages": [
+    "D:\\HK1_NAM_4\\J2EE\\Spa-Pet-Booking-System\\.taste-skill\\hero-refine-before\\desktop-page-01.jpg",
+    "D:\\HK1_NAM_4\\J2EE\\Spa-Pet-Booking-System\\.taste-skill\\hero-refine-before\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "D:\\HK1_NAM_4\\J2EE\\Spa-Pet-Booking-System\\.taste-skill\\hero-refine-before\\desktop-fold.jpg",
+   "pages": [
+    "D:\\HK1_NAM_4\\J2EE\\Spa-Pet-Booking-System\\.taste-skill\\hero-refine-before\\desktop-page-01.jpg",
+    "D:\\HK1_NAM_4\\J2EE\\Spa-Pet-Booking-System\\.taste-skill\\hero-refine-before\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "desktop",
+   "width": 1366,
+   "fold": "D:\\HK1_NAM_4\\J2EE\\Spa-Pet-Booking-System\\.taste-skill\\hero-refine-before\\desktop-fold.jpg",
+   "pages": [
+    "D:\\HK1_NAM_4\\J2EE\\Spa-Pet-Booking-System\\.taste-skill\\hero-refine-before\\desktop-page-01.jpg",
+    "D:\\HK1_NAM_4\\J2EE\\Spa-Pet-Booking-System\\.taste-skill\\hero-refine-before\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "desktop",
+   "width": 1280,
+   "fold": "D:\\HK1_NAM_4\\J2EE\\Spa-Pet-Booking-System\\.taste-skill\\hero-refine-before\\desktop-fold.jpg",
+   "pages": [
+    "D:\\HK1_NAM_4\\J2EE\\Spa-Pet-Booking-System\\.taste-skill\\hero-refine-before\\desktop-page-01.jpg",
+    "D:\\HK1_NAM_4\\J2EE\\Spa-Pet-Booking-System\\.taste-skill\\hero-refine-before\\desktop-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
