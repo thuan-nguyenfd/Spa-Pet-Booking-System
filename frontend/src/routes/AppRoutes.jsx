@@ -1,4 +1,4 @@
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Link, Route, Routes, useLocation } from 'react-router-dom'
 import PlaceholderPage from '../components/PlaceholderPage.jsx'
 import {
   AboutPage, AdminBookingDetailPage, AdminBookingsPage, AdminCustomersPage,
@@ -20,18 +20,30 @@ const pageRoutes = [
   ['/admin/staff', AdminStaffPage], ['/admin/services', AdminServicesPage],
 ]
 
-export default function AppRoutes() {
+function RouteContent() {
+  const { pathname } = useLocation()
+
   return (
-    <BrowserRouter>
-      <nav aria-label="Placeholder navigation">
-        <Link to="/">Home</Link>
-      </nav>
+    <>
+      {pathname !== '/' && (
+        <nav aria-label="Placeholder navigation">
+          <Link to="/">Home</Link>
+        </nav>
+      )}
       <Routes>
         {pageRoutes.map(([path, Page]) => (
           <Route key={path} path={path} element={<Page />} />
         ))}
         <Route path="*" element={<PlaceholderPage title="Page not found" />} />
       </Routes>
+    </>
+  )
+}
+
+export default function AppRoutes() {
+  return (
+    <BrowserRouter>
+      <RouteContent />
     </BrowserRouter>
   )
 }
