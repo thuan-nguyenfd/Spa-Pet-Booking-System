@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import logoHeader from '../../../assets/brand/logoheader.png'
 
 const NAV_ITEMS = [
   { label: 'Đặt hẹn', href: '/booking', route: true, cta: true },
@@ -7,15 +8,6 @@ const NAV_ITEMS = [
   { label: 'Giới thiệu', href: '#about', section: 'about' },
   { label: 'Liên hệ', href: '#contact', section: 'contact' },
 ]
-
-function BrandMark() {
-  return (
-    <svg viewBox="0 0 44 44" aria-hidden="true" focusable="false">
-      <path d="M8 19 10 6l10 8c2-.5 4-.5 6 0l9-8 2 13c2 3 3 6 2 10-2 8-10 12-18 12S6 37 5 29c-.5-4 .5-7 3-10Z" fill="currentColor" />
-      <path d="M15 27c2-2 4-2 6 0m4 0c2-2 4-2 6 0m-8 3 2 2 2-2" fill="none" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  )
-}
 
 function Chevron() {
   return <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="m4 6 4 4 4-4" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
@@ -28,6 +20,14 @@ export default function HomeHeader() {
   const [accountState, setAccountState] = useState('closed')
   const accountMenuRef = useRef(null)
   const accountTriggerRef = useRef(null)
+  const homeLogoNavigationRef = useRef(false)
+  const location = useLocation()
+
+  useEffect(() => {
+    if (!homeLogoNavigationRef.current) return
+    homeLogoNavigationRef.current = false
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [location.pathname, location.search, location.hash])
 
   useEffect(() => {
     const ids = ['services', 'about', 'contact']
@@ -63,7 +63,7 @@ export default function HomeHeader() {
     if (accountState === 'closing') {
       const timeout = window.setTimeout(() => {
         setAccountState((state) => state === 'closing' ? 'closed' : state)
-      }, 220)
+      }, 170)
       return () => window.clearTimeout(timeout)
     }
 
@@ -94,9 +94,21 @@ export default function HomeHeader() {
     setMenuOpen(false)
   }
 
+  function handleBrandClick(event) {
+    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
+
+    if (location.pathname === '/' && !location.search && !location.hash) {
+      event.preventDefault()
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+      return
+    }
+
+    homeLogoNavigationRef.current = true
+  }
+
   function logOut() {
-    setIsLoggedIn(false)
-    setAccountState('closed')
+    setAccountState('closing')
+    window.setTimeout(() => setIsLoggedIn(false), 170)
   }
 
   function toggleAccountMenu() {
@@ -110,9 +122,8 @@ export default function HomeHeader() {
   return (
     <header className="site-header">
       <div className="site-header__row">
-        <Link className="brand" to="/" aria-label="MEOMEO, về trang chủ">
-          <span className="brand__mark"><BrandMark /></span>
-          <span>MEOMEO</span>
+        <Link className="brand" to="/" aria-label="MEOMEO, về trang chủ" onClick={handleBrandClick}>
+          <img className="brand__logo" src={logoHeader} alt="MEOMEO Spa" />
         </Link>
 
         <nav className={`primary-nav${menuOpen ? ' is-open' : ''}`} id="primary-menu" aria-label="Điều hướng chính">

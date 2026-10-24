@@ -6,7 +6,7 @@ export default function ServicesSection() {
     <section className="services-section page-gutter" id="services" aria-labelledby="services-title">
       <div className="section-heading section-heading--split">
         <h2 id="services-title">Dịch vụ cho boss</h2>
-        <p>Chọn buổi chăm vừa với bộ lông, tính cách và lịch sinh hoạt của thú cưng.</p>
+        <p className="services-section__intro">Chọn buổi chăm vừa với bộ lông, tính cách và lịch sinh hoạt của thú cưng</p>
       </div>
 
       <div className="service-list">
@@ -33,10 +33,7 @@ export default function ServicesSection() {
                   <span>Giá theo cân nặng</span>
                   <Link to={`/services/${service.madichvu}`}>Xem chi tiết <span aria-hidden="true">↗</span></Link>
                 </div>
-              </div>
-              <a className="service-strip__credit" href={credit.href} target="_blank" rel="noreferrer" aria-label={`Nguồn ảnh: ${credit.title}, ${credit.creator}, ${credit.licence}, ${credit.source}`}>
-                Ảnh: {credit.creator} · {credit.licence}
-              </a>
+              </div>           
             </article>
           )
         })}

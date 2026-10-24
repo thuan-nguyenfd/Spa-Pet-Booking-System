@@ -77,26 +77,16 @@ body:has(.meomeo-home) {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 9px;
   width: fit-content;
-  color: var(--meomeo-ink);
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: -0.055em;
   text-decoration: none;
 }
 
-.brand__mark {
-  display: grid;
-  width: 33px;
-  height: 33px;
-  place-items: center;
-  color: #e29a18;
-}
-
-.brand__mark svg {
-  width: 100%;
-  height: 100%;
+.brand__logo {
+  display: block;
+  width: auto;
+  height: 56px;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .primary-nav {
@@ -235,33 +225,51 @@ body:has(.meomeo-home) {
 
 .account-menu__panel {
   position: absolute;
+  z-index: 1;
   top: calc(100% + 9px);
   right: 0;
   display: grid;
-  min-width: 210px;
-  padding: 9px;
-  border-radius: 8px;
-  background: #fff8dc;
-  box-shadow: 0 10px 24px rgb(40 37 30 / 0.12); /* taste-skill-ignore: subtle shadow on the floating account menu. */
+  gap: 2px;
+  width: 224px;
+  padding: 8px;
+  border: 1px solid rgb(40 37 30 / 0.1);
+  border-radius: 6px;
+  background: #fffdf8;
+  box-shadow: 0 12px 28px rgb(40 37 30 / 0.09), 0 2px 5px rgb(40 37 30 / 0.05); /* taste-skill-ignore: subtle shadow on the floating account menu. */
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-7px) scale(0.985);
+  transform: translateY(-8px) scale(0.97);
   transform-origin: top right;
   pointer-events: none;
-  transition: opacity 210ms cubic-bezier(0.2, 0.7, 0.2, 1), transform 210ms cubic-bezier(0.2, 0.7, 0.2, 1), visibility 0s linear 210ms;
+  transition: opacity 160ms cubic-bezier(0.2, 0.7, 0.2, 1), transform 160ms cubic-bezier(0.2, 0.7, 0.2, 1), visibility 0s;
+}
+
+.account-menu[data-state='opening'] .account-menu__panel,
+.account-menu[data-state='open'] .account-menu__panel,
+.account-menu[data-state='closing'] .account-menu__panel {
+  visibility: visible;
 }
 
 .account-menu[data-state='open'] .account-menu__panel {
   opacity: 1;
-  visibility: visible;
   transform: translateY(0) scale(1);
   pointer-events: auto;
-  transition: opacity 210ms cubic-bezier(0.2, 0.7, 0.2, 1), transform 210ms cubic-bezier(0.2, 0.7, 0.2, 1), visibility 0s;
+  transition: opacity 200ms cubic-bezier(0.2, 0.7, 0.2, 1), transform 200ms cubic-bezier(0.2, 0.7, 0.2, 1), visibility 0s;
+}
+
+.account-menu[data-state='closing'] .account-menu__panel {
+  opacity: 0;
+  transform: translateY(-5px) scale(0.985);
+  transition: opacity 145ms cubic-bezier(0.2, 0.7, 0.2, 1), transform 145ms cubic-bezier(0.2, 0.7, 0.2, 1), visibility 0s;
 }
 
 .account-menu__panel a,
 .account-menu__panel button {
-  padding: 11px 12px;
+  display: flex;
+  width: 100%;
+  min-height: 40px;
+  align-items: center;
+  padding: 9px 11px;
   border: 0;
   border-radius: 4px;
   background: transparent;
@@ -269,14 +277,68 @@ body:has(.meomeo-home) {
   font: inherit;
   font-size: 14px;
   font-weight: 600;
+  line-height: 1.35;
   text-align: left;
   text-decoration: none;
   cursor: pointer;
+  opacity: 0;
+  transform: translateY(-3px);
+  transition: opacity 130ms cubic-bezier(0.2, 0.7, 0.2, 1), transform 130ms cubic-bezier(0.2, 0.7, 0.2, 1), background-color 170ms ease, color 170ms ease;
+}
+
+.account-menu__panel > :nth-child(1) { --item-delay: 0ms; }
+.account-menu__panel > :nth-child(2) { --item-delay: 28ms; }
+.account-menu__panel > :nth-child(3) { --item-delay: 56ms; }
+.account-menu__panel > :nth-child(4) { --item-delay: 84ms; }
+
+.account-menu[data-state='open'] .account-menu__panel > a,
+.account-menu[data-state='open'] .account-menu__panel > button {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 135ms cubic-bezier(0.2, 0.7, 0.2, 1) var(--item-delay), transform 135ms cubic-bezier(0.2, 0.7, 0.2, 1) var(--item-delay), background-color 170ms ease, color 170ms ease;
+}
+
+.account-menu[data-state='closing'] .account-menu__panel > a,
+.account-menu[data-state='closing'] .account-menu__panel > button {
+  opacity: 0;
+  transform: translateY(-2px);
+  transition: opacity 105ms ease, transform 105ms ease, background-color 150ms ease, color 150ms ease;
 }
 
 .account-menu__panel a:hover,
-.account-menu__panel button:hover {
+.account-menu__panel button:hover,
+.account-menu__panel a:focus-visible,
+.account-menu__panel button:focus-visible {
   background: var(--meomeo-soft);
+  transform: translateX(3px);
+}
+
+.account-menu[data-state='open'] .account-menu__panel > a:hover,
+.account-menu[data-state='open'] .account-menu__panel > button:hover,
+.account-menu[data-state='open'] .account-menu__panel > a:focus-visible,
+.account-menu[data-state='open'] .account-menu__panel > button:focus-visible {
+  transition-delay: 0s;
+  transform: translateX(3px);
+}
+
+.account-menu__panel > button {
+  margin-top: 4px;
+  padding-top: 12px;
+  border-top: 1px solid rgb(40 37 30 / 0.1);
+}
+
+.account-menu__panel > a:focus-visible,
+.account-menu__panel > button:focus-visible {
+  outline: 2px solid var(--meomeo-ink);
+  outline-offset: 1px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .account-menu__panel,
+  .account-menu__panel > a,
+  .account-menu__panel > button {
+    transition: none;
+  }
 }
 
 .menu-toggle {
@@ -587,11 +649,16 @@ body:has(.meomeo-home) {
 }
 
 .section-heading--split {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(250px, 0.55fr);
-  align-items: end;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
   gap: 32px;
   margin-bottom: 30px;
+}
+
+.section-heading--split > h2 {
+  flex: 0 0 auto;
 }
 
 .section-heading h2,
@@ -614,6 +681,17 @@ body:has(.meomeo-home) {
   font-size: 16px;
   line-height: 1.55;
   text-wrap: pretty;
+}
+
+.section-heading--split > .services-section__intro {
+  flex: 0 0 auto;
+  max-width: none;
+  margin: 0 0 0 auto;
+  color: var(--meomeo-muted);
+  font-size: 16px;
+  line-height: 1.55;
+  text-align: right;
+  white-space: nowrap;
 }
 
 .service-list {
@@ -877,61 +955,61 @@ body:has(.meomeo-home) {
 
 .site-footer {
   position: relative;
+  z-index: 1;
+  isolation: isolate;
   padding-top: 80px;
   padding-bottom: 22px;
-  background: var(--meomeo-dark);
+  background: transparent;
   color: #fffdf5;
   scroll-margin-top: 76px;
 }
 
-.peeking-pets {
+.site-footer::before {
   position: absolute;
-  top: -94px;
-  right: clamp(32px, 12vw, 180px);
-  left: clamp(32px, 12vw, 180px);
-  display: flex;
-  height: 105px;
-  justify-content: space-between;
+  z-index: 0;
+  inset: 0;
+  background: var(--meomeo-dark);
+  content: '';
   pointer-events: none;
 }
 
-.peeking-pets__mobile {
-  display: flex;
+.site-footer__pets {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  right: clamp(12px, 6vw, 28px);
+  width: clamp(240px, 80vw, 360px);
+  max-width: calc(100vw - 32px);
+  transform: translateY(calc(-86% - 4px));
+  pointer-events: none;
+}
+
+.site-footer__top,
+.site-footer .photo-credits,
+.site-footer__bottom {
+  position: relative;
+  z-index: 1;
+}
+
+.site-footer__pets-image {
+  display: block;
   width: 100%;
-  justify-content: space-between;
-}
-
-.peeking-pets__desktop {
-  display: none;
-}
-
-.peeking-pets__mobile svg {
-  width: clamp(100px, 14vw, 176px);
-  height: 128px;
-  overflow: visible;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 @media (min-width: 1200px) {
-  .peeking-pets {
-    top: 0;
+  .site-footer__pets {
     right: clamp(56px, 6.5vw, 132px);
-    left: auto;
-    width: clamp(360px, 26vw, 430px);
-    height: auto;
-    aspect-ratio: 430 / 184;
-    justify-content: initial;
-    transform: translateY(-84.7826%);
+    width: clamp(380px, 40vw, 620px);
   }
+}
 
-  .peeking-pets__mobile {
-    display: none;
-  }
-
-  .peeking-pets__desktop {
-    display: block;
-    width: 100%;
-    height: 100%;
-    overflow: visible;
+@media (min-width: 761px) and (max-width: 1199px) {
+  .site-footer__pets {
+    right: clamp(24px, 5vw, 64px);
+    width: clamp(300px, 42vw, 470px);
   }
 }
 
@@ -1091,6 +1169,16 @@ body:has(.meomeo-home) {
 }
 
 @media (max-width: 1000px) {
+  .section-heading--split {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 13px;
+  }
+
+  .section-heading--split > .services-section__intro {
+    white-space: normal;
+  }
+
   .site-header__row {
     grid-template-columns: minmax(145px, 1fr) auto minmax(132px, 1fr);
   }
@@ -1167,13 +1255,8 @@ body:has(.meomeo-home) {
     gap: 12px;
   }
 
-  .brand {
-    font-size: 19px;
-  }
-
-  .brand__mark {
-    width: 30px;
-    height: 30px;
+  .brand__logo {
+    height: 48px;
   }
 
   .site-header__actions {
@@ -1274,8 +1357,8 @@ body:has(.meomeo-home) {
   }
 
   .section-heading--split {
-    grid-template-columns: 1fr;
-    gap: 13px;
+    flex-direction: column;
+    align-items: stretch;
     margin-bottom: 22px;
   }
 
@@ -1389,18 +1472,6 @@ body:has(.meomeo-home) {
 
   .site-footer {
     padding-top: 67px;
-  }
-
-  .peeking-pets {
-    top: -75px;
-    right: 13%;
-    left: 13%;
-    height: 83px;
-  }
-
-  .peeking-pets__mobile svg {
-    width: 104px;
-    height: 103px;
   }
 
   .site-footer__brand h2 {
