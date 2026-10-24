@@ -14,7 +14,6 @@
 Spa-Pet-Booking-System/
 ├── backend/
 │   ├── .mvn/
-│   │   └── wrapper/
 │   └── src/
 │       └── main/
 │           ├── java/com/petspa/petbooking/
@@ -37,18 +36,50 @@ Spa-Pet-Booking-System/
 ├── database/
 ├── docs/
 ├── frontend/
+│   ├── public/
+│   │   └── rive/
 │   └── src/
 │       ├── api/
 │       ├── assets/
+│       │   ├── icons/
+│       │   └── images/
+│       │       ├── common/
+│       │       ├── home/
+│       │       ├── pets/
+│       │       └── services/
 │       ├── components/
+│       │   ├── booking/
+│       │   ├── common/
+│       │   ├── home/
+│       │   │   ├── AboutSection/
+│       │   │   ├── Hero/
+│       │   │   ├── ReviewsSection/
+│       │   │   └── ServicesSection/
+│       │   ├── layout/
+│       │   │   ├── admin/
+│       │   │   └── user/
+│       │   ├── pet/
+│       │   ├── review/
+│       │   └── service/
+│       ├── context/
 │       ├── hooks/
 │       ├── layouts/
 │       ├── pages/
 │       │   ├── admin/
+│       │   │   ├── bookings/
+│       │   │   ├── customers/
+│       │   │   ├── dashboard/
+│       │   │   ├── pets/
+│       │   │   ├── services/
+│       │   │   └── staff/
 │       │   ├── auth/
 │       │   ├── customer/
+│       │   │   ├── booking/
+│       │   │   ├── pets/
+│       │   │   └── profile/
 │       │   └── public/
 │       ├── routes/
+│       ├── styles/
 │       └── utils/
 └── uploads/
     ├── pets/
