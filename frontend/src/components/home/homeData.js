@@ -1,7 +1,7 @@
-import bathPhoto from '../../assets/services/dog-shower-animal-photography.webp'
-import trimPhoto from '../../assets/services/white-shih-tzu-trimmed.jpg'
-import brushPhoto from '../../assets/services/brushing-out-the-pyrenees-2.jpg'
-import comboPhoto from '../../assets/services/sage-mix.jpg'
+import bathPhoto from '../../assets/images/services/dog-shower-animal-photography.webp'
+import trimPhoto from '../../assets/images/services/white-shih-tzu-trimmed.jpg'
+import brushPhoto from '../../assets/images/services/brushing-out-the-pyrenees-2.jpg'
+import comboPhoto from '../../assets/images/services/sage-mix.jpg'
 
 // Shape follows database/spathucung.sql: dichvu + UI-only image attribution lives separately.
 export const SERVICES = [

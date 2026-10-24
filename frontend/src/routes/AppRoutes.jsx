@@ -1,5 +1,6 @@
 import { BrowserRouter, Link, Route, Routes, useLocation } from 'react-router-dom'
-import PlaceholderPage from '../components/PlaceholderPage.jsx'
+import PlaceholderPage from '../components/common/PlaceholderPage.jsx'
+import PublicLayout from '../layouts/PublicLayout.jsx'
 import {
   AboutPage, AdminBookingDetailPage, AdminBookingsPage, AdminCustomersPage,
   AdminDashboardPage, AdminPetsPage, AdminServicesPage, AdminStaffPage,
@@ -20,6 +21,8 @@ const pageRoutes = [
   ['/admin/staff', AdminStaffPage], ['/admin/services', AdminServicesPage],
 ]
 
+const publicPaths = new Set(['/', '/about', '/services', '/services/:serviceId', '/contact'])
+
 function RouteContent() {
   const { pathname } = useLocation()
 
@@ -31,7 +34,12 @@ function RouteContent() {
         </nav>
       )}
       <Routes>
-        {pageRoutes.map(([path, Page]) => (
+        <Route element={<PublicLayout />}>
+          {pageRoutes.filter(([path]) => publicPaths.has(path)).map(([path, Page]) => (
+            <Route key={path} path={path} element={<Page />} />
+          ))}
+        </Route>
+        {pageRoutes.filter(([path]) => !publicPaths.has(path)).map(([path, Page]) => (
           <Route key={path} path={path} element={<Page />} />
         ))}
         <Route path="*" element={<PlaceholderPage title="Page not found" />} />

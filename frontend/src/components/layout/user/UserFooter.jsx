@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { CONTACT_INFO, SERVICE_CREDITS } from './homeData.js'
+import { CONTACT_INFO, SERVICE_CREDITS } from '../../home/homeData.js'
 
 function MobilePeekingPets() {
   return (

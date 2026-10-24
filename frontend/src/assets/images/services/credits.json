@@ -1,6 +1,6 @@
 [
  {
-  "file": "frontend/src/assets/services/dog-shower-animal-photography.webp",
+  "file": "frontend/src/assets/images/services/dog-shower-animal-photography.webp",
   "media": "image",
   "ref": "openverse:667d8d69-bc85-41c8-a3e8-b84a81b3574d",
   "title": "Dog shower, animal photography",
@@ -22,7 +22,7 @@
   "saved": "2026-10-23T13:02:32.212Z"
  },
  {
-  "file": "frontend/src/assets/services/white-shih-tzu-trimmed.jpg",
+  "file": "frontend/src/assets/images/services/white-shih-tzu-trimmed.jpg",
   "media": "image",
   "ref": "openverse:f271becf-71dc-4f8d-81e3-b623f4b2dd2d",
   "title": "White Shih tzu Trimmed",
@@ -46,7 +46,7 @@
   "saved": "2026-10-23T13:02:57.544Z"
  },
  {
-  "file": "frontend/src/assets/services/brushing-out-the-pyrenees-2.jpg",
+  "file": "frontend/src/assets/images/services/brushing-out-the-pyrenees-2.jpg",
   "media": "image",
   "ref": "openverse:fb88ba65-0526-4532-8470-a5774dff05c0",
   "title": "Brushing Out the Pyrenees 2",
@@ -70,7 +70,7 @@
   "saved": "2026-10-23T13:03:05.706Z"
  },
  {
-  "file": "frontend/src/assets/services/sage-mix.jpg",
+  "file": "frontend/src/assets/images/services/sage-mix.jpg",
   "media": "image",
   "ref": "openverse:c5d796d6-1383-4e9b-8ec8-bad917cd9721",
   "title": "Sage Mix",

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { SERVICES, SERVICE_CREDITS } from './homeData.js'
+import { SERVICES, SERVICE_CREDITS } from '../homeData.js'
 
 export default function ServicesSection() {
   return (

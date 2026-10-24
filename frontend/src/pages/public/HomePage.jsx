@@ -1,11 +1,8 @@
 import { useEffect } from 'react'
-import HomeHeader from '../../components/home/HomeHeader.jsx'
-import Hero from '../../components/home/Hero.jsx'
-import ServicesSection from '../../components/home/ServicesSection.jsx'
-import AboutSection from '../../components/home/AboutSection.jsx'
-import ReviewsSection from '../../components/home/ReviewsSection.jsx'
-import HomeFooter from '../../components/home/HomeFooter.jsx'
-import '../../assets/homepage.css'
+import Hero from '../../components/home/Hero/Hero.jsx'
+import ServicesSection from '../../components/home/ServicesSection/ServicesSection.jsx'
+import AboutSection from '../../components/home/AboutSection/AboutSection.jsx'
+import ReviewsSection from '../../components/home/ReviewsSection/ReviewsSection.jsx'
 
 export default function HomePage() {
   useEffect(() => {
@@ -25,15 +22,11 @@ export default function HomePage() {
   }, [])
 
   return (
-    <div className="meomeo-home">
-      <HomeHeader />
-      <main>
-        <Hero />
-        <ServicesSection />
-        <AboutSection />
-        <ReviewsSection />
-      </main>
-      <HomeFooter />
-    </div>
+    <>
+      <Hero />
+      <ServicesSection />
+      <AboutSection />
+      <ReviewsSection />
+    </>
   )
 }

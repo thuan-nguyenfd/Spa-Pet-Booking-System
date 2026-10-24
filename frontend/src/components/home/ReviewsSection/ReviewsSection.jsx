@@ -1,4 +1,4 @@
-import { SAMPLE_REVIEWS } from './homeData.js'
+import { SAMPLE_REVIEWS } from '../homeData.js'
 
 function StarRating({ rating }) {
   return (
