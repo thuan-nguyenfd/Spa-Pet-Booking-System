@@ -1,8 +1,8 @@
 export default function PlaceholderPage({ title }) {
   return (
-    <main>
-      <h1>{title}</h1>
+    <section className="placeholder-page" aria-labelledby="placeholder-title">
+      <h1 id="placeholder-title">{title}</h1>
       <p>This page is a placeholder for a future project feature.</p>
-    </main>
+    </section>
   )
 }

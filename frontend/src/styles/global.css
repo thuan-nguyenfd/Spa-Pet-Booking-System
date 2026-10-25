@@ -2,8 +2,8 @@
 
 :root {
   color-scheme: light;
-  --meomeo-yellow: #fed519;
-  --meomeo-yellow-deep: #e8bd00;
+  --meomeo-yellow: #fbc552;
+  --meomeo-yellow-deep: #e4a932;
   --meomeo-ink: #28251e;
   --meomeo-muted: #5d584c;
   --meomeo-ground: #ffffff;
@@ -57,6 +57,27 @@ body:has(.meomeo-home) {
 
 .page-gutter {
   padding-inline: var(--page-gutter);
+}
+
+.placeholder-page {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  min-height: min(62vh, 620px);
+  padding: 4rem var(--page-gutter);
+  text-align: center;
+}
+
+.placeholder-page h1 {
+  margin: 0 0 0.75rem;
+  color: var(--meomeo-ink);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.placeholder-page p {
+  margin: 0;
+  color: var(--meomeo-muted);
+  font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
 .site-header {
@@ -526,7 +547,7 @@ body:has(.meomeo-home) {
 }
 
 .button--primary:hover {
-  background: #f1cb00;
+  background: var(--meomeo-yellow-deep);
   transform: translateY(-2px);
 }
 
@@ -545,7 +566,7 @@ body:has(.meomeo-home) {
 
 .text-link {
   padding: 9px 0;
-  border-bottom: 2px solid #d7b400;
+  border-bottom: 2px solid var(--meomeo-yellow);
   color: var(--meomeo-ink);
   font-size: 16px;
   font-weight: 500;
@@ -1048,7 +1069,7 @@ body:has(.meomeo-home) {
 
 .site-footer__details h3 {
   margin: 0 0 14px;
-  color: #f8d858;
+  color: var(--meomeo-yellow);
   font-size: 16px;
   font-weight: 600;
 }

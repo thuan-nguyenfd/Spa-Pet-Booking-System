@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { CONTACT_INFO, SERVICE_CREDITS } from '../../home/homeData.js'
 import catDogFooter from '../../../assets/custom-footer/catdogfooter.png'
+import { ROUTES } from '../../../constants/routes.js'
 
 function SocialMark({ kind }) {
   if (kind === 'instagram') {
@@ -23,7 +24,7 @@ export default function HomeFooter() {
         <div className="site-footer__details">
           <div>
             <h3>Khám phá</h3>
-            <Link to="/booking">Đặt hẹn</Link>
+            <Link to={ROUTES.BOOKING}>Đặt hẹn</Link>
             <a href="#services">Dịch vụ</a>
             <a href="#about">Giới thiệu</a>
           </div>

@@ -1,5 +1,6 @@
 import { Fragment, lazy, Suspense, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { ROUTES } from '../../../constants/routes.js'
 
 const HeroRiveCat = lazy(() => import('./HeroRiveCat.jsx'))
 const HERO_MESSAGES = [
@@ -128,7 +129,7 @@ export default function Hero() {
           <span className="hero__intro-accessible" aria-live="polite" aria-atomic="true">{message}</span>
         </p>
         <div className="hero__actions">
-          <Link className="button button--primary" to="/booking">Đặt hẹn ngay<span aria-hidden="true">↗</span></Link>
+          <Link className="button button--primary" to={ROUTES.BOOKING}>Đặt hẹn ngay<span aria-hidden="true">↗</span></Link>
           <a className="text-link" href="#services">Khám phá dịch vụ</a>
         </div>
       </div>

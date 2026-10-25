@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { SERVICES, SERVICE_CREDITS } from '../homeData.js'
+import { ROUTES } from '../../../constants/routes.js'
 
 export default function ServicesSection() {
   return (
@@ -31,7 +32,7 @@ export default function ServicesSection() {
                   <span>{service.loaidichvu === 'COMBO' ? 'Gói kết hợp' : 'Dịch vụ đơn'}</span>
                   <span>{service.thoiluongphut} phút</span>
                   <span>Giá theo cân nặng</span>
-                  <Link to={`/services/${service.madichvu}`}>Xem chi tiết <span aria-hidden="true">↗</span></Link>
+                  <Link to={ROUTES.SERVICE_DETAIL(service.madichvu)}>Xem chi tiết <span aria-hidden="true">↗</span></Link>
                 </div>
               </div>           
             </article>

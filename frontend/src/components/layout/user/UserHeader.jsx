@@ -1,12 +1,13 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import logoHeader from '../../../assets/brand/logoheader.png'
+import { ROUTES } from '../../../constants/routes.js'
 
 const NAV_ITEMS = [
-  { label: 'Đặt hẹn', href: '/booking', route: true, cta: true },
-  { label: 'Dịch vụ', href: '#services', section: 'services' },
-  { label: 'Giới thiệu', href: '#about', section: 'about' },
-  { label: 'Liên hệ', href: '#contact', section: 'contact' },
+  { label: 'Đặt hẹn', href: ROUTES.BOOKING, route: true, cta: true },
+  { label: 'Dịch vụ', href: ROUTES.SERVICES, section: 'services', route: true },
+  { label: 'Giới thiệu', href: ROUTES.ABOUT, section: 'about', route: true },
+  { label: 'Liên hệ', href: ROUTES.CONTACT, section: 'contact', route: true },
 ]
 
 function Chevron() {
@@ -22,6 +23,14 @@ export default function HomeHeader() {
   const accountTriggerRef = useRef(null)
   const homeLogoNavigationRef = useRef(false)
   const location = useLocation()
+  const routeActiveSection = location.pathname === ROUTES.ABOUT
+    ? 'about'
+    : location.pathname === ROUTES.CONTACT
+      ? 'contact'
+      : location.pathname === ROUTES.SERVICES || location.pathname.startsWith(`${ROUTES.SERVICES}/`)
+        ? 'services'
+        : ''
+  const currentActiveSection = routeActiveSection || activeSection
 
   useEffect(() => {
     if (!homeLogoNavigationRef.current) return
@@ -30,18 +39,29 @@ export default function HomeHeader() {
   }, [location.pathname, location.search, location.hash])
 
   useEffect(() => {
-    const ids = ['services', 'about', 'contact']
-    const targets = ids.map((id) => document.getElementById(id)).filter(Boolean)
-    if (!('IntersectionObserver' in window) || !targets.length) return undefined
+    const ids = ['services', 'contact']
+    const updateActiveSection = () => {
+      if (location.pathname !== ROUTES.HOME) {
+        setActiveSection('')
+        return
+      }
 
-    const observer = new IntersectionObserver((entries) => {
-      const visible = entries.filter((entry) => entry.isIntersecting)
-      if (visible.length) setActiveSection(visible.sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0].target.id)
-    }, { rootMargin: '-25% 0px -60% 0px', threshold: [0, 0.25, 0.5] })
+      const marker = document.querySelector('.site-header')?.getBoundingClientRect().bottom ?? 0
+      const active = ids
+        .map((id) => document.getElementById(id))
+        .filter((section) => section && section.getBoundingClientRect().top <= marker + 40)
+        .at(-1)
+      setActiveSection(active?.id ?? '')
+    }
 
-    targets.forEach((target) => observer.observe(target))
-    return () => observer.disconnect()
-  }, [])
+    updateActiveSection()
+    window.addEventListener('scroll', updateActiveSection, { passive: true })
+    window.addEventListener('resize', updateActiveSection)
+    return () => {
+      window.removeEventListener('scroll', updateActiveSection)
+      window.removeEventListener('resize', updateActiveSection)
+    }
+  }, [location.pathname])
 
   useEffect(() => {
     if (!menuOpen) return undefined
@@ -99,10 +119,12 @@ export default function HomeHeader() {
 
     if (location.pathname === '/' && !location.search && !location.hash) {
       event.preventDefault()
+      setActiveSection('')
       window.scrollTo({ top: 0, behavior: 'smooth' })
       return
     }
 
+    setActiveSection('')
     homeLogoNavigationRef.current = true
   }
 
@@ -122,7 +144,7 @@ export default function HomeHeader() {
   return (
     <header className="site-header">
       <div className="site-header__row">
-        <Link className="brand" to="/" aria-label="MEOMEO, về trang chủ" onClick={handleBrandClick}>
+        <Link className="brand" to={ROUTES.HOME} aria-label="MEOMEO, về trang chủ" onClick={handleBrandClick}>
           <img className="brand__logo" src={logoHeader} alt="MEOMEO Spa" />
         </Link>
 
@@ -130,11 +152,14 @@ export default function HomeHeader() {
           {NAV_ITEMS.map((item) => {
             const className = item.cta
               ? 'primary-nav__link primary-nav__link--cta'
-              : item.section && activeSection === item.section ? 'primary-nav__link is-active' : 'primary-nav__link'
+              : item.section && currentActiveSection === item.section ? 'primary-nav__link is-active' : 'primary-nav__link'
             return item.route ? (
               <Link key={item.label} className={className} to={item.href} onClick={closeMobileMenu}>{item.label}</Link>
             ) : (
-              <a key={item.label} className={className} href={item.href} aria-current={activeSection === item.section ? 'location' : undefined} onClick={closeMobileMenu}>{item.label}</a>
+              <a key={item.label} className={className} href={item.href} aria-current={currentActiveSection === item.section ? 'location' : undefined} onClick={() => {
+                setActiveSection(item.section)
+                closeMobileMenu()
+              }}>{item.label}</a>
             )
           })}
         </nav>
@@ -156,14 +181,14 @@ export default function HomeHeader() {
                 <span className="account-menu__chevron"><Chevron /></span>
               </button>
               <div className="account-menu__panel" id="account-panel" aria-hidden={accountState !== 'open'} inert={accountState !== 'open'}>
-                <Link to="/profile" onClick={closeAccountMenu}>Trang cá nhân</Link>
-                <Link to="/pets" onClick={closeAccountMenu}>Thú cưng của tôi</Link>
-                <Link to="/bookings" onClick={closeAccountMenu}>Lịch đặt của tôi</Link>
+                <Link to={ROUTES.PROFILE} onClick={closeAccountMenu}>Trang cá nhân</Link>
+                <Link to={ROUTES.PETS} onClick={closeAccountMenu}>Thú cưng của tôi</Link>
+                <Link to={ROUTES.BOOKINGS} onClick={closeAccountMenu}>Lịch đặt của tôi</Link>
                 <button type="button" onClick={logOut}>Đăng xuất</button>
               </div>
             </div>
           ) : (
-            <Link className="login-link" to="/login">Đăng nhập</Link>
+            <Link className="login-link" to={ROUTES.LOGIN}>Đăng nhập</Link>
           )}
           <button className="menu-toggle" type="button" aria-controls="primary-menu" aria-expanded={menuOpen} aria-label={menuOpen ? 'Đóng menu' : 'Mở menu'} onClick={() => setMenuOpen((open) => !open)}>
             <span /><span /><span />
