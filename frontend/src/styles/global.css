@@ -978,6 +978,7 @@ body:has(.meomeo-home) {
   position: relative;
   z-index: 1;
   isolation: isolate;
+  margin-block-start: clamp(144px, 10vw, 180px);
   padding-top: 80px;
   padding-bottom: 22px;
   background: transparent;

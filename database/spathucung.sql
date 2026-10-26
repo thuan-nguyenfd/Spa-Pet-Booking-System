@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 18, 2026 at 04:19 PM
+-- Generation Time: Oct 26, 2026 at 11:22 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -80,7 +80,7 @@ CREATE TABLE `datlich` (
   `tenthucung` varchar(100) NOT NULL,
   `loaithucung` enum('DOG','CAT','OTHER') NOT NULL,
   `cannangthucung` decimal(5,2) NOT NULL,
-  `ghichuthucung` text DEFAULT NULL,
+  `ghichu` text DEFAULT NULL,
   `manhanvien` int(11) NOT NULL,
   `ngayhen` date NOT NULL,
   `giobatdau` time NOT NULL,

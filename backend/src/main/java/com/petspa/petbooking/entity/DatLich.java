@@ -35,8 +35,8 @@ public class DatLich {
     private LoaiThuCung loaiThuCung;
     @Column(name = "cannangthucung", nullable = false, precision = 5, scale = 2)
     private BigDecimal canNangThuCung;
-    @Column(name = "ghichuthucung", columnDefinition = "TEXT")
-    private String ghiChuThuCung;
+    @Column(name = "ghichu", columnDefinition = "TEXT")
+    private String ghiChu;
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "manhanvien", nullable = false)
     private NhanVien nhanVien;
@@ -80,8 +80,8 @@ public class DatLich {
     public void setLoaiThuCung(LoaiThuCung loaiThuCung) { this.loaiThuCung = loaiThuCung; }
     public BigDecimal getCanNangThuCung() { return canNangThuCung; }
     public void setCanNangThuCung(BigDecimal canNangThuCung) { this.canNangThuCung = canNangThuCung; }
-    public String getGhiChuThuCung() { return ghiChuThuCung; }
-    public void setGhiChuThuCung(String ghiChuThuCung) { this.ghiChuThuCung = ghiChuThuCung; }
+    public String getGhiChu() { return ghiChu; }
+    public void setGhiChu(String ghiChu) { this.ghiChu = ghiChu; }
     public NhanVien getNhanVien() { return nhanVien; }
     public void setNhanVien(NhanVien nhanVien) { this.nhanVien = nhanVien; }
     public LocalDate getNgayHen() { return ngayHen; }

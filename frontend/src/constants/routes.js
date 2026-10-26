@@ -3,7 +3,7 @@ export const ROUTES = Object.freeze({
   HOME: '/', ABOUT: '/about', SERVICES: '/services',
   SERVICE_DETAIL: (serviceId = ':serviceId') => `/services/${serviceId}`,
   CONTACT: '/contact', LOGIN: '/login', REGISTER: '/register', FORGOT_PASSWORD: '/forgot-password',
-  PROFILE: '/profile', PETS: '/pets', BOOKING: '/booking', BOOKING_CONFIRM: '/booking/confirm',
+  PROFILE: '/profile', PETS: '/pets', BOOKING: '/booking',
   BOOKINGS: '/bookings', BOOKING_DETAIL: (bookingId = ':bookingId') => `/bookings/${bookingId}`,
   ADMIN: '/admin', ADMIN_BOOKINGS: '/admin/bookings',
   ADMIN_BOOKING_DETAIL: (bookingId = ':bookingId') => `/admin/bookings/${bookingId}`,
