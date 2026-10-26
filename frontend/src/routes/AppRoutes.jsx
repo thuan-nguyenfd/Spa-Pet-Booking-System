@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import PlaceholderPage from '../components/common/PlaceholderPage.jsx'
 import PublicLayout from '../layouts/PublicLayout.jsx'
 import CustomerLayout from '../layouts/CustomerLayout.jsx'
 import { ROUTES } from '../constants/routes.js'
+import NotFoundPage from '../pages/public/NotFoundPage.jsx'
 import {
   AboutPage, AdminBookingDetailPage, AdminBookingsPage, AdminCustomersPage,
   AdminDashboardPage, AdminPetsPage, AdminServicesPage, AdminStaffPage,
@@ -37,6 +37,7 @@ function RouteContent() {
           {pageRoutes.filter(([path]) => publicPaths.has(path)).map(([path, Page]) => (
             <Route key={path} path={path} element={<Page />} />
           ))}
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
         <Route element={<CustomerLayout />}>
           {pageRoutes.filter(([path]) => customerPaths.has(path)).map(([path, Page]) => (
@@ -46,7 +47,6 @@ function RouteContent() {
         {pageRoutes.filter(([path]) => !publicPaths.has(path) && !customerPaths.has(path)).map(([path, Page]) => (
           <Route key={path} path={path} element={<Page />} />
         ))}
-        <Route path="*" element={<PlaceholderPage title="Page not found" />} />
       </Routes>
     </>
   )
