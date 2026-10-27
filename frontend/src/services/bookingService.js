@@ -1,4 +1,6 @@
-import { mockRequest } from './mockRequest.js'
+import { copyMockData, mockRequest } from './mockRequest.js'
+import { MOCK_BOOKINGS } from '../mocks/bookings.js'
+import { mapBookingResponse } from '../utils/bookingMapper.js'
 
 function bookingDateCode(date) {
   const [year, month, day] = date.split('-')
@@ -6,6 +8,12 @@ function bookingDateCode(date) {
 }
 
 export const bookingService = {
+  async getMyBookings() {
+    // Replace this mock source with GET /api/bookings/my; the page consumes the same mapped model.
+    const bookings = copyMockData(MOCK_BOOKINGS).map(mapBookingResponse)
+    return mockRequest(bookings, 520)
+  },
+
   async createBooking(draft) {
     const dateKey = `meomeo:booking-sequence:${draft.appointmentDate}`
     let sequence = 1

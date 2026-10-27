@@ -1,0 +1,777 @@
+{
+ "url": "http://127.0.0.1:4173/bookings",
+ "at": "2026-10-27T08:24:33.625Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 3,
+   "filled": [
+    0.89,
+    0.73,
+    0.49
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 2209,
+     "screens": 2.5,
+     "words": 430,
+     "img": 2,
+     "video": 0,
+     "canvas": 0,
+     "svg": 10,
+     "sections": 0,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "catdogfooter-DL_7pnkw.png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Lịch đặt của tôi",
+     "words": 4,
+     "chars": 16,
+     "lines": 1,
+     "size": 36,
+     "vw": 2.5,
+     "font": "Arial",
+     "weight": 700,
+     "tracking": -0.04,
+     "leading": 1.18,
+     "top": 161,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Lịch đặt của tôi",
+     "words": 4,
+     "lines": 1,
+     "size": 36,
+     "font": "Arial"
+    },
+    "headings": [
+     {
+      "text": "Lịch đặt của tôi",
+      "words": 4,
+      "chars": 16,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Arial",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 161,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "27",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Arial",
+      "weight": 700,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.03,
+      "top": 376,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "2",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Arial",
+      "weight": 700,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.01,
+      "top": 561,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "8",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Arial",
+      "weight": 700,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.01,
+      "top": 746,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "15",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Arial",
+      "weight": 700,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.03,
+      "top": 922,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "12",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Arial",
+      "weight": 700,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.03,
+      "top": 1098,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "18",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Arial",
+      "weight": 700,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.03,
+      "top": 1274,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "5",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Arial",
+      "weight": 700,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.01,
+      "top": 1450,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "MEOMEO",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 80,
+      "vw": 5.6,
+      "font": "Nunito Sans",
+      "weight": 700,
+      "tracking": -0.09,
+      "leading": 0.82,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 1889,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 9,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 7,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Arial",
+       "share": 0.7,
+       "mono": false
+      },
+      {
+       "family": "Nunito Sans",
+       "share": 0.3,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      15,
+      16,
+      18,
+      21,
+      22,
+      36,
+      80
+     ],
+     "sizeCount": 8,
+     "notLoaded": [
+      "Nunito Sans"
+     ],
+     "body": {
+      "font": "Nunito Sans",
+      "size": 14,
+      "leading": 1.5,
+      "weight": 500,
+      "tracking": 0,
+      "contrast": 1.6
+     },
+     "measureChars": 40,
+     "max": {
+      "size": 80,
+      "vw": 5.6,
+      "font": "Nunito Sans",
+      "text": "MEOMEO"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.05,
+     "centerShare": 0.02,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Lịch hẹn tại MEOMEO",
+      "above": "Lịch đặt của tôi",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 16,
+      "top": 132
+     },
+     {
+      "text": "Thứ Ba",
+      "above": "27",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 355
+     },
+     {
+      "text": "Thứ Hai",
+      "above": "2",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 540
+     },
+     {
+      "text": "Chủ Nhật",
+      "above": "8",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 724
+     },
+     {
+      "text": "Chủ Nhật",
+      "above": "15",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 900
+     },
+     {
+      "text": "Thứ Bảy",
+      "above": "12",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 1076
+     },
+     {
+      "text": "Thứ Ba",
+      "above": "18",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 1252
+     },
+     {
+      "text": "Chủ Nhật",
+      "above": "5",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 1428
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#f4f3f1",
+       "top": 76,
+       "hsl": {
+        "h": 40,
+        "s": 0.12,
+        "l": 0.95
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#5d584c",
+       "share": 0.42
+      },
+      {
+       "color": "#28251e",
+       "share": 0.27
+      },
+      {
+       "color": "#fbc552",
+       "share": 0.14
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.13
+      },
+      {
+       "color": "#e7e0ce",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#fbc552",
+      "hsl": {
+       "h": 41,
+       "s": 0.95,
+       "l": 0.65
+      },
+      "fg": "#28251e"
+     },
+     "lowContrast": [
+      {
+       "text": "Spa · Grooming · Chăm sóc thú cưng. Chỗ ",
+       "ratio": 1,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#ffffff",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "Đặt hẹn",
+       "ratio": 1,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#ffffff",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "Dịch vụ",
+       "ratio": 1,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#ffffff",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "Giới thiệu",
+       "ratio": 1,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#ffffff",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "09xx xxx xxx",
+       "ratio": 1,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#ffffff",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "hello@meomeo.vn",
+       "ratio": 1,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#ffffff",
+       "bg": "#ffffff"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 2,
+     "radius": 6,
+     "height": 42,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Đặt hẹn"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 8,
+     "hairlineSamples": [
+      "nav.my-bookings-page__filters 1371px",
+      "article.my-bookings-page__booking.my-bookings-page__booking- 1371px",
+      "article.my-bookings-page__booking 1371px",
+      "article.my-bookings-page__booking 1371px",
+      "article.my-bookings-page__booking 1371px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 7,
+     "fixed": true,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 2209,
+    "margins": {
+     "left": 35,
+     "right": 39
+    },
+    "sections": [
+     {
+      "sel": "main",
+      "tag": "main",
+      "top": 76,
+      "height": 1589,
+      "words": 341,
+      "media": 0,
+      "middle": 304,
+      "heading": {
+       "text": "Lịch đặt của tôi",
+       "size": 36,
+       "tag": "h1"
+      },
+      "left": 35,
+      "right": 39,
+      "textLeft": 35,
+      "textRight": 39,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer#contact.site-footer.page-gutter",
+      "tag": "footer",
+      "top": 1809,
+      "height": 400,
+      "words": 114,
+      "media": 0,
+      "middle": 123,
+      "heading": {
+       "text": "MEOMEO",
+       "size": 80,
+       "tag": "h2"
+      },
+      "left": 35,
+      "right": 35,
+      "textLeft": 35,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Lịch đặt của tôi",
+      "size": 36,
+      "top": 161,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 35,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 2,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.14,
+    "voidBox": {
+     "x": 660,
+     "y": 120,
+     "w": 780,
+     "h": 240
+    }
+   },
+   "app": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "dark": false,
+    "ground": "#ffffff",
+    "sidebar": null,
+    "topbar": {
+     "h": 76
+    },
+    "canvas": {
+     "left": 35,
+     "right": 39
+    },
+    "hero": {
+     "text": "Lịch đặt của tôi",
+     "words": 4,
+     "chars": 16,
+     "lines": 1,
+     "size": 36,
+     "vw": 2.5,
+     "font": "Arial",
+     "weight": 700,
+     "tracking": -0.04,
+     "leading": 1.18,
+     "top": 161,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 0,
+     "firstScreen": 0,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 0,
+     "radii": [],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 4,
+     "tabularShare": 1,
+     "kpiMax": 36
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      14,
+      15,
+      16,
+      18,
+      21,
+      22,
+      36,
+      80
+     ]
+    },
+    "title": {
+     "text": "Lịch đặt của tôi",
+     "size": 36,
+     "top": 161
+    },
+    "colourShare": 0.008
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "contrast",
+   "width": 1440,
+   "message": "Unreadable text: \"Spa · Grooming · Chăm sóc thú cưng. Chỗ \" 1:1 (#ffffff on #ffffff); \"Đặt hẹn\" 1:1 (#ffffff on #ffffff); \"Dịch vụ\" 1:1 (#ffffff on #ffffff); \"Giới thiệu\" 1:1 (#ffffff on #ffffff)",
+   "fix": "Raise contrast to at least 4.5:1 for text, 3:1 for large display."
+  },
+  {
+   "level": "WARN",
+   "id": "font-fallback",
+   "width": 1440,
+   "message": "Typeface(s) declared but not loaded, so a fallback is rendering: Nunito Sans",
+   "fix": "Fix the font URL / family name, or the screenshots you are judging are not the design."
+  },
+  {
+   "level": "WARN",
+   "id": "app-title-size",
+   "width": 1440,
+   "message": "The h1 is 36px (\"Lịch đặt của tôi\").",
+   "fix": "An app screen is not a landing page: the title is 18-32px (20-24px on a phone)."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "D:\\HK1_NAM_4\\J2EE\\SPA_PET\\Spa-Pet-Booking-System\\.taste-skill\\my-bookings-font-after\\desktop-fold.jpg",
+   "pages": [
+    "D:\\HK1_NAM_4\\J2EE\\SPA_PET\\Spa-Pet-Booking-System\\.taste-skill\\my-bookings-font-after\\desktop-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

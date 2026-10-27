@@ -1,7 +1,7 @@
 export const MOCK_STAFF = [
   {
     id: 1,
-    name: 'Trúc Linh',
+    name: 'Tuấn Khôi',
     role: 'Chuyên viên grooming',
     specialties: ['Tắm & sấy', 'Chăm sóc chó nhỏ'],
     unavailableWeekdays: [1, 2],
@@ -10,7 +10,7 @@ export const MOCK_STAFF = [
   },
   {
     id: 2,
-    name: 'Quỳnh Anh',
+    name: 'Gia Hào',
     role: 'Chuyên viên chăm sóc lông',
     specialties: ['Gỡ rối', 'Cắt tỉa tạo kiểu'],
     unavailableWeekdays: [3],
@@ -19,7 +19,7 @@ export const MOCK_STAFF = [
   },
   {
     id: 3,
-    name: 'Minh Huy',
+    name: 'Minh Vũ',
     role: 'Chuyên viên grooming',
     specialties: ['Combo chăm sóc', 'Chó & mèo'],
     unavailableWeekdays: [0, 4],
