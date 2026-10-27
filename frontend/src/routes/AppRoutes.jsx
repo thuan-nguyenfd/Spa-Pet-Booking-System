@@ -6,7 +6,7 @@ import NotFoundPage from '../pages/public/NotFoundPage.jsx'
 import {
   AboutPage, AdminBookingDetailPage, AdminBookingsPage, AdminCustomersPage,
   AdminDashboardPage, AdminPetsPage, AdminServicesPage, AdminStaffPage,
-  BookingDetailPage, BookingPage, ContactPage,
+  BookingDetailPage, BookingPage, BookingReschedulePage, ContactPage,
   ForgotPasswordPage, HomePage, LoginPage, MyBookingsPage, PetsPage,
   ProfilePage, RegisterPage, ServiceDetailPage, ServicesPage,
 } from '../pages/index.js'
@@ -17,7 +17,8 @@ const pageRoutes = [
   [ROUTES.LOGIN, LoginPage], [ROUTES.REGISTER, RegisterPage], [ROUTES.FORGOT_PASSWORD, ForgotPasswordPage],
   [ROUTES.PROFILE, ProfilePage], [ROUTES.PETS, PetsPage], [ROUTES.BOOKING, BookingPage],
   [ROUTES.BOOKINGS, MyBookingsPage],
-  [ROUTES.BOOKING_DETAIL(), BookingDetailPage], [ROUTES.ADMIN, AdminDashboardPage],
+  [ROUTES.BOOKING_DETAIL(), BookingDetailPage],
+  [ROUTES.BOOKING_RESCHEDULE(), BookingReschedulePage], [ROUTES.ADMIN, AdminDashboardPage],
   [ROUTES.ADMIN_BOOKINGS, AdminBookingsPage], [ROUTES.ADMIN_BOOKING_DETAIL(), AdminBookingDetailPage],
   [ROUTES.ADMIN_CUSTOMERS, AdminCustomersPage], [ROUTES.ADMIN_PETS, AdminPetsPage],
   [ROUTES.ADMIN_STAFF, AdminStaffPage], [ROUTES.ADMIN_SERVICES, AdminServicesPage],
@@ -27,6 +28,7 @@ const publicPaths = new Set([ROUTES.HOME, ROUTES.ABOUT, ROUTES.SERVICES, ROUTES.
 const customerPaths = new Set([
   ROUTES.PROFILE, ROUTES.PETS, ROUTES.BOOKING,
   ROUTES.BOOKINGS, ROUTES.BOOKING_DETAIL(),
+  ROUTES.BOOKING_RESCHEDULE(),
 ])
 
 function RouteContent() {

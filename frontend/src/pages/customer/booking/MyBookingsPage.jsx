@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import PetAvatar from '../../../components/booking/PetAvatar.jsx'
 import searchIcon from '../../../assets/icons/booking/look.svg'
+import arrowRightIcon from '../../../assets/icons/booking/arrow-right.svg'
 import { ROUTES } from '../../../constants/routes.js'
 import { bookingService } from '../../../services/bookingService.js'
 import { formatVnd } from '../../../utils/bookingPrice.js'
@@ -143,7 +144,7 @@ function BookingListItem({ booking, isNext }) {
               <strong>{formatVnd(booking.totalPrice)}</strong>
             </div>
             <Link className="my-bookings-page__detail-link" to={ROUTES.BOOKING_DETAIL(booking.id)}>
-              Xem chi tiết <span aria-hidden="true">→</span>
+              Xem chi tiết <img src={arrowRightIcon} alt="" />
             </Link>
           </div>
         </div>

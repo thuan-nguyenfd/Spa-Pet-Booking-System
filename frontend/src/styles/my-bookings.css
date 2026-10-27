@@ -438,10 +438,28 @@
   font-weight: 700;
   line-height: 1.4;
   text-decoration: none;
-  transition: color 150ms ease, gap 150ms ease;
+  transition: color 150ms ease, gap 150ms ease, background-color 150ms ease;
 }
 
-.my-bookings-page__detail-link:hover,
+.my-bookings-page__detail-link {
+  margin: -7px -9px;
+  padding: 7px 9px;
+  border-radius: 4px;
+}
+
+.my-bookings-page__detail-link img {
+  width: 15px;
+  height: 15px;
+  flex: none;
+  object-fit: contain;
+}
+
+.my-bookings-page__detail-link:hover {
+  gap: 11px;
+  color: #4b3710;
+  background: #ebe9e6;
+}
+
 .my-bookings-page__empty a:hover {
   gap: 11px;
   color: #4b3710;

@@ -5,6 +5,7 @@ export const ROUTES = Object.freeze({
   CONTACT: '/contact', LOGIN: '/login', REGISTER: '/register', FORGOT_PASSWORD: '/forgot-password',
   PROFILE: '/profile', PETS: '/pets', BOOKING: '/booking',
   BOOKINGS: '/bookings', BOOKING_DETAIL: (bookingId = ':bookingId') => `/bookings/${bookingId}`,
+  BOOKING_RESCHEDULE: (bookingId = ':bookingId') => `/bookings/${bookingId}/reschedule`,
   ADMIN: '/admin', ADMIN_BOOKINGS: '/admin/bookings',
   ADMIN_BOOKING_DETAIL: (bookingId = ':bookingId') => `/admin/bookings/${bookingId}`,
   ADMIN_CUSTOMERS: '/admin/customers', ADMIN_PETS: '/admin/pets',

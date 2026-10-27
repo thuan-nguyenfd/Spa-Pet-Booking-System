@@ -1,0 +1,623 @@
+{
+ "url": "http://127.0.0.1:5173/booking",
+ "at": "2026-10-27T09:41:07.369Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 2,
+   "filled": [
+    0.33,
+    0.26
+   ],
+   "motion": {
+    "elements": 2,
+    "css": 2,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 1565,
+     "screens": 1.7,
+     "words": 228,
+     "img": 4,
+     "video": 0,
+     "canvas": 0,
+     "svg": 6,
+     "sections": 1,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "catdogfooter.png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Đặt lịch chăm sóc",
+     "words": 4,
+     "chars": 17,
+     "lines": 1,
+     "size": 32,
+     "vw": 2.2,
+     "font": "Nunito Sans",
+     "weight": 700,
+     "tracking": -0.04,
+     "leading": 1.15,
+     "top": 161,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Đặt lịch chăm sóc",
+     "words": 4,
+     "lines": 1,
+     "size": 32,
+     "font": "Nunito Sans"
+    },
+    "headings": [
+     {
+      "text": "Đặt lịch chăm sóc",
+      "words": 4,
+      "chars": 17,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Nunito Sans",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.32,
+      "top": 161,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Boss nào sẽ đi spa hôm nay?",
+      "words": 7,
+      "chars": 27,
+      "lines": 1,
+      "size": 30.2,
+      "vw": 2.1,
+      "font": "Nunito Sans",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.65,
+      "top": 408,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "MEOMEO",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 80,
+      "vw": 5.6,
+      "font": "Nunito Sans",
+      "weight": 700,
+      "tracking": -0.09,
+      "leading": 0.82,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 1245,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 3,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 7,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Nunito Sans",
+       "share": 0.96,
+       "mono": false
+      },
+      {
+       "family": "Arial",
+       "share": 0.04,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      24,
+      26,
+      30,
+      32,
+      80
+     ],
+     "sizeCount": 12,
+     "notLoaded": [
+      "Nunito Sans"
+     ],
+     "body": {
+      "font": "Nunito Sans",
+      "size": 14,
+      "leading": 1.5,
+      "weight": 500,
+      "tracking": 0,
+      "contrast": 1.6
+     },
+     "measureChars": 40,
+     "max": {
+      "size": 80,
+      "vw": 5.6,
+      "font": "Nunito Sans",
+      "text": "MEOMEO"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.03,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Đặt lịch tại MEOMEO",
+      "above": "Đặt lịch chăm sóc",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 15,
+      "top": 128
+     },
+     {
+      "text": "Bước 1 · Thú cưng",
+      "above": "Boss nào sẽ đi spa hôm nay?",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 381
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 76,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#fbc552",
+       "share": 0.25
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.23
+      },
+      {
+       "color": "#28251e",
+       "share": 0.11
+      },
+      {
+       "color": "#5d584c",
+       "share": 0.09
+      },
+      {
+       "color": "#766e61",
+       "share": 0.05
+      }
+     ],
+     "button": {
+      "bg": "#fbc552",
+      "hsl": {
+       "h": 41,
+       "s": 0.95,
+       "l": 0.65
+      },
+      "fg": "#28251e"
+     },
+     "lowContrast": [
+      {
+       "text": "Spa · Grooming · Chăm sóc thú cưng. Chỗ ",
+       "ratio": 1,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#ffffff",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "Đặt hẹn",
+       "ratio": 1,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#ffffff",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "Dịch vụ",
+       "ratio": 1,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#ffffff",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "Giới thiệu",
+       "ratio": 1,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#ffffff",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "09xx xxx xxx",
+       "ratio": 1,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#ffffff",
+       "bg": "#ffffff"
+      },
+      {
+       "text": "hello@meomeo.vn",
+       "ratio": 1,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#ffffff",
+       "bg": "#ffffff"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 3,
+     "radius": 6,
+     "height": 42,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Đặt hẹn",
+      "Tiếp tục →"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 7,
+     "hairlineSamples": [
+      "nav.booking-stepper 1371px",
+      "button.pet-choice.is-selected 460px",
+      "button.pet-choice 460px",
+      "div.booking-stage-actions 933px",
+      "div.booking-summary__pet 324px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 3,
+     "boxRadius": 8,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 7,
+     "fixed": true,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 1565,
+    "margins": {
+     "left": 35,
+     "right": 35
+    },
+    "sections": [
+     {
+      "sel": "main",
+      "tag": "main",
+      "top": 76,
+      "height": 945,
+      "words": 136,
+      "media": 0,
+      "middle": 86,
+      "heading": {
+       "text": "Đặt lịch chăm sóc",
+       "size": 32,
+       "tag": "h1"
+      },
+      "left": 35,
+      "right": 35,
+      "textLeft": 35,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "footer#contact.site-footer.page-gutter",
+      "tag": "footer",
+      "top": 1165,
+      "height": 400,
+      "words": 114,
+      "media": 0,
+      "middle": 123,
+      "heading": {
+       "text": "MEOMEO",
+       "size": 80,
+       "tag": "h2"
+      },
+      "left": 35,
+      "right": 35,
+      "textLeft": 35,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Đặt lịch chăm sóc",
+      "size": 32,
+      "top": 161,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 35,
+      "n": 2
+     },
+     {
+      "x": 1053,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 4,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.1,
+    "voidBox": {
+     "x": 0,
+     "y": 720,
+     "w": 720,
+     "h": 180
+    }
+   },
+   "app": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "dark": false,
+    "ground": "#ffffff",
+    "sidebar": null,
+    "topbar": {
+     "h": 76
+    },
+    "canvas": {
+     "left": 35,
+     "right": 35
+    },
+    "hero": {
+     "text": "Đặt lịch chăm sóc",
+     "words": 4,
+     "chars": 17,
+     "lines": 1,
+     "size": 32,
+     "vw": 2.2,
+     "font": "Nunito Sans",
+     "weight": 700,
+     "tracking": -0.04,
+     "leading": 1.15,
+     "top": 161,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 4,
+     "firstScreen": 4,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 4,
+     "radii": [
+      [
+       8,
+       2
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       6,
+       1
+      ]
+     ],
+     "heavyBorders": 1,
+     "borderSamples": [
+      "#fbc552 on #fff9e9 (1.51:1)"
+     ],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 1,
+     "hues": 1,
+     "samples": [
+      {
+       "hue": 43,
+       "size": 58,
+       "radius": "50%"
+      }
+     ]
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 0,
+     "tabularShare": null,
+     "kpiMax": null
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      24,
+      30,
+      32,
+      80
+     ]
+    },
+    "title": {
+     "text": "Đặt lịch chăm sóc",
+     "size": 32,
+     "top": 161
+    },
+    "colourShare": 0.009
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "contrast",
+   "width": 1440,
+   "message": "Unreadable text: \"Spa · Grooming · Chăm sóc thú cưng. Chỗ \" 1:1 (#ffffff on #ffffff); \"Đặt hẹn\" 1:1 (#ffffff on #ffffff); \"Dịch vụ\" 1:1 (#ffffff on #ffffff); \"Giới thiệu\" 1:1 (#ffffff on #ffffff)",
+   "fix": "Raise contrast to at least 4.5:1 for text, 3:1 for large display."
+  },
+  {
+   "level": "WARN",
+   "id": "font-fallback",
+   "width": 1440,
+   "message": "Typeface(s) declared but not loaded, so a fallback is rendering: Nunito Sans",
+   "fix": "Fix the font URL / family name, or the screenshots you are judging are not the design."
+  },
+  {
+   "level": "WARN",
+   "id": "dev-server",
+   "width": 1440,
+   "message": "This page is served by a development server (Vite, webpack or Next in dev mode).",
+   "fix": "Run the last gate on the production build too (vite build && vite preview, next build && next start, or the built index.html): minifiers and bundlers change the CSS a visitor receives."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "D:\\HK1_NAM_4\\J2EE\\SPA_PET\\Spa-Pet-Booking-System\\.taste-skill\\booking-reference-before\\desktop-fold.jpg",
+   "pages": [
+    "D:\\HK1_NAM_4\\J2EE\\SPA_PET\\Spa-Pet-Booking-System\\.taste-skill\\booking-reference-before\\desktop-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

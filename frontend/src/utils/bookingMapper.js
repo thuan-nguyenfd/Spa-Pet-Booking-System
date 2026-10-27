@@ -12,6 +12,10 @@ function numericValue(value, fallback = 0) {
   return Number.isFinite(number) ? number : fallback
 }
 
+function booleanValue(value) {
+  return value === true || value === 1 || String(value).toLowerCase() === 'true'
+}
+
 function mapService(service = {}) {
   const serviceId = numericId(firstDefined(service.serviceId, service.madichvu, service.id))
   return {
@@ -58,6 +62,7 @@ export function mapBookingResponse(response = {}) {
     employee: {
       id: numericId(firstDefined(employeeSource.id, employeeSource.employeeId, response.employeeId, response.manhanvien)),
       name: firstDefined(employeeSource.name, employeeSource.employeeName, response.employeeName, ''),
+      avatarUrl: firstDefined(employeeSource.avatarUrl, employeeSource.avatar, employeeSource.imageUrl, response.employeeAvatar, ''),
     },
     appointment: {
       date: firstDefined(appointmentSource.date, appointmentSource.appointmentDate, response.appointmentDate, response.ngayhen, ''),
@@ -74,14 +79,15 @@ export function mapBookingResponse(response = {}) {
       method: firstDefined(paymentSource.method, paymentSource.paymentMethod, response.paymentMethod, 'CASH'),
       amount: numericValue(firstDefined(paymentSource.amount, paymentSource.paymentAmount, response.paymentAmount, response.totalPrice, response.tongtien)),
       transactionStatus: firstDefined(paymentSource.transactionStatus, response.transactionStatus, paymentStatus === 'PAID' ? 'SUCCESS' : 'PENDING'),
+      paidAt: firstDefined(paymentSource.paidAt, paymentSource.ngaythanhtoan, response.paidAt, ''),
     },
     cancellationReason: firstDefined(response.cancellationReason, response.lydohuy, null),
     review: reviewSource ? {
-      id: numericId(firstDefined(reviewSource.id, reviewSource.reviewId)),
-      rating: numericValue(reviewSource.rating),
-      comment: reviewSource.comment ?? '',
-      hidden: Boolean(reviewSource.hidden),
-      createdAt: reviewSource.createdAt ?? '',
+      id: numericId(firstDefined(reviewSource.id, reviewSource.reviewId, reviewSource.madanhgia)),
+      rating: numericValue(firstDefined(reviewSource.rating, reviewSource.sosao)),
+      comment: firstDefined(reviewSource.comment, reviewSource.binhluan, ''),
+      hidden: booleanValue(firstDefined(reviewSource.hidden, reviewSource.is_hidden, false)),
+      createdAt: firstDefined(reviewSource.createdAt, reviewSource.ngaytao, ''),
     } : null,
     createdAt: firstDefined(response.createdAt, response.ngaytao, ''),
     updatedAt: firstDefined(response.updatedAt, response.ngaycapnhat, ''),
