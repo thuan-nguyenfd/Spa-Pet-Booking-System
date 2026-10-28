@@ -36,8 +36,8 @@ export default function BookingActionZone({ booking, onCancel }) {
       {actions.canReschedule || actions.canPay || actions.canCancel ? (
         <div className="booking-detail-page__action-list">
           {actions.canReschedule && (
-            <Link className="booking-detail-page__button booking-detail-page__button--primary" to={ROUTES.BOOKING_RESCHEDULE(booking.id)}>
-              Đổi lịch <img className="booking-detail-page__action-arrow" src={arrowRightIcon} alt="" />
+            <Link className="booking-detail-page__button booking-detail-page__button--primary booking-detail-page__button--reschedule" to={ROUTES.BOOKING_RESCHEDULE(booking.id)}>
+              <span className="booking-detail-page__reschedule-label">Đổi lịch</span> <img className="booking-detail-page__action-arrow" src={arrowRightIcon} alt="" />
             </Link>
           )}
           {actions.canPay && (

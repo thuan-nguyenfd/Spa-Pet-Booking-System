@@ -612,6 +612,15 @@
   transform: translateX(2px);
 }
 
+.booking-detail-page__button--reschedule .booking-detail-page__reschedule-label,
+.booking-detail-page__button--reschedule .booking-detail-page__action-arrow {
+  transform: translateY(2px);
+}
+
+.booking-detail-page__button--reschedule:hover .booking-detail-page__action-arrow {
+  transform: translate(2px, 2px);
+}
+
 .booking-detail-page__button--secondary {
   padding-inline: 0;
   background: transparent;
