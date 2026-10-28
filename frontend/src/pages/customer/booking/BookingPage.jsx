@@ -1,6 +1,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import AddPetModal from '../../../components/booking/AddPetModal.jsx'
+import arrowLeftIcon from '../../../assets/icons/booking/arrow-left.svg'
+import arrowRightIcon from '../../../assets/icons/booking/arrow-right.svg'
 import BookingStepper from '../../../components/booking/BookingStepper.jsx'
 import BookingSummary from '../../../components/booking/BookingSummary.jsx'
 import BookingSuccess from '../../../components/booking/BookingSuccess.jsx'
@@ -259,11 +261,11 @@ export default function BookingPage() {
                 {currentStepContent()}
                 <div className="booking-stage-actions">
                   {activeStep > 0 ? (
-                    <button className="booking-text-button" type="button" onClick={() => changeStep(activeStep - 1)} disabled={isSubmitting}><span aria-hidden="true">←</span> Quay lại</button>
+                    <button className="booking-text-button booking-stage-actions__back" type="button" onClick={() => changeStep(activeStep - 1)} disabled={isSubmitting}><img src={arrowLeftIcon} alt="" aria-hidden="true" /> Quay lại</button>
                   ) : <span />}
-                  <button className="button button--primary booking-action-button" type="button" onClick={continueToNextStep} disabled={isSubmitting}>
+                  <button className="button button--primary booking-action-button booking-stage-actions__next" type="button" onClick={continueToNextStep} disabled={isSubmitting}>
                     {activeStep === 3 ? (isSubmitting ? 'Đang xác nhận…' : 'Xác nhận đặt lịch') : 'Tiếp tục'}
-                    {activeStep < 3 && <span aria-hidden="true">→</span>}
+                    {activeStep < 3 && <img src={arrowRightIcon} alt="" aria-hidden="true" />}
                   </button>
                 </div>
                 <p className="booking-stage-footnote">{activeStep === 3 ? 'Bạn sẽ nhận được mã lịch hẹn ngay sau khi xác nhận.' : `Bước ${activeStep + 1} trên 4 · ${formatDuration(totalDuration) ? `Dự kiến ${formatDuration(totalDuration)}` : 'Chưa cần thanh toán'}`}</p>

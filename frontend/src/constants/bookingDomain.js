@@ -1,0 +1,9 @@
+export const BOOKING_STATUS = Object.freeze({
+  PENDING: 'PENDING', CONFIRMED: 'CONFIRMED', COMPLETED: 'COMPLETED', CANCELLED: 'CANCELLED',
+})
+
+export const PAYMENT_STATUS = Object.freeze({ UNPAID: 'UNPAID', PAID: 'PAID' })
+export const PAYMENT_METHOD = Object.freeze({ CASH: 'CASH', VNPAY: 'VNPAY' })
+export const TRANSACTION_STATUS = Object.freeze({
+  PENDING: 'PENDING', SUCCESS: 'SUCCESS', FAILED: 'FAILED', CANCELLED: 'CANCELLED',
+})

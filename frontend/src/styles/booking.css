@@ -764,8 +764,16 @@
   gap: 20px;
   margin-top: 30px;
   padding-top: 19px;
-  border-top: 1px solid #e9e5dd;
+  border-top: 0;
 }
+
+.booking-stage-actions__back,
+.booking-stage-actions__next { transition: color 150ms ease, background-color 150ms ease; }
+.booking-stage-actions__back { border-radius: 4px; transition: color 150ms ease, background-color 150ms ease, padding-right 150ms ease; }
+.booking-stage-actions__back:hover:not(:disabled) { padding-right: 9px; background: #ebe9e6; color: #28251e; }
+.booking-stage-actions__next:hover:not(:disabled) { background: var(--meomeo-yellow-deep); transform: none; }
+.booking-stage-actions__back img,
+.booking-stage-actions__next img { width: 16px; height: 16px; flex: none; object-fit: contain; }
 
 .booking-action-button {
   min-height: 48px;
@@ -1114,6 +1122,20 @@
 .booking-photo-upload__choose { padding: 6px 9px; border: 1px solid #dcd7ce; border-radius: 4px; background: #fff; }
 .booking-photo-upload__name { color: #797369; font-size: 12px; font-weight: 500; }
 .booking-photo-upload:focus-within .booking-photo-upload__choose { outline: 3px solid #9b741d; outline-offset: 2px; }
+.booking-modal-backdrop .booking-field input:focus,
+.booking-modal-backdrop .booking-field select:focus,
+.booking-modal-backdrop .booking-field textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #9b741d;
+}
+.booking-modal-backdrop .booking-field input:focus-visible,
+.booking-modal-backdrop .booking-field select:focus-visible,
+.booking-modal-backdrop .booking-field textarea:focus-visible { outline: none; }
+.booking-modal-backdrop .booking-photo-upload:focus-within .booking-photo-upload__choose {
+  outline: none;
+  border-color: #9b741d;
+}
 .booking-form-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; }
 .booking-field { display: grid; gap: 6px; }
 .booking-modal__actions { display: flex; justify-content: flex-end; align-items: center; gap: 20px; margin-top: 5px; padding-top: 15px; border-top: 1px solid #e7e2d8; }

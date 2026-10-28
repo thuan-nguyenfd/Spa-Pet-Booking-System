@@ -39,6 +39,7 @@ export default function BookingReviewSection({ booking, onSubmit }) {
   const [rating, setRating] = useState(0)
   const [comment, setComment] = useState('')
   const [validationMessage, setValidationMessage] = useState('')
+  const [submitting, setSubmitting] = useState(false)
   const firstRatingRef = useRef(null)
   const { canReview } = getBookingActions(booking)
 
@@ -62,25 +63,27 @@ export default function BookingReviewSection({ booking, onSubmit }) {
     )
   }
 
-  function submitReview(event) {
+  async function submitReview(event) {
     event.preventDefault()
+    if (submitting) return
     if (!rating) {
       setValidationMessage('Chọn số sao trước khi gửi đánh giá nhé.')
       firstRatingRef.current?.focus()
       return
     }
 
-    onSubmit({
-      id: 901,
-      rating,
-      comment: comment.trim(),
-      hidden: false,
-      createdAt: new Date().toISOString(),
-    })
-    setIsExpanded(false)
-    setRating(0)
-    setComment('')
-    setValidationMessage('')
+    setSubmitting(true)
+    try {
+      await onSubmit({ rating, comment: comment.trim() })
+      setIsExpanded(false)
+      setRating(0)
+      setComment('')
+      setValidationMessage('')
+    } catch {
+      setValidationMessage('Chưa gửi được đánh giá. Bạn thử lại nhé.')
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   function closeReviewForm() {
@@ -142,7 +145,7 @@ export default function BookingReviewSection({ booking, onSubmit }) {
             placeholder="Điều gì khiến bạn hài lòng trong buổi chăm sóc?"
           />
           <div className="booking-detail-page__review-actions">
-            <button className="booking-detail-page__button booking-detail-page__button--primary" type="submit">Gửi đánh giá</button>
+            <button className="booking-detail-page__button booking-detail-page__button--primary" type="submit" disabled={submitting}>Gửi đánh giá</button>
             <button className="booking-detail-page__button booking-detail-page__button--quiet" type="button" onClick={closeReviewForm}>Đóng</button>
           </div>
         </form>

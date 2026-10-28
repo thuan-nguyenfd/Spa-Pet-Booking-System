@@ -15,13 +15,24 @@ export default function BookingActionZone({ booking, onCancel }) {
   const [cancelExpanded, setCancelExpanded] = useState(false)
   const [cancelReason, setCancelReason] = useState('')
   const [paymentNotice, setPaymentNotice] = useState('')
+  const [cancelling, setCancelling] = useState(false)
+  const [cancelError, setCancelError] = useState('')
   const actions = getBookingActions(booking)
 
-  function submitCancellation(event) {
+  async function submitCancellation(event) {
     event.preventDefault()
-    onCancel(cancelReason.trim() || null)
-    setCancelExpanded(false)
-    setCancelReason('')
+    if (cancelling) return
+    setCancelling(true)
+    setCancelError('')
+    try {
+      await onCancel(cancelReason.trim() || null)
+      setCancelExpanded(false)
+      setCancelReason('')
+    } catch {
+      setCancelError('Chưa hủy được lịch hẹn. Bạn thử lại nhé.')
+    } finally {
+      setCancelling(false)
+    }
   }
 
   return (
@@ -89,9 +100,10 @@ export default function BookingActionZone({ booking, onCancel }) {
             placeholder="Chia sẻ lý do để MEOMEO hỗ trợ bạn tốt hơn"
           />
           <p className="booking-detail-page__cancel-warning">Hành động này không thể hoàn tác.</p>
+          {cancelError && <p role="alert">{cancelError}</p>}
           <div className="booking-detail-page__cancel-actions">
             <button className="booking-detail-page__button booking-detail-page__button--quiet" type="button" onClick={() => setCancelExpanded(false)}>Giữ lịch</button>
-            <button className="booking-detail-page__button booking-detail-page__button--danger" type="submit">Xác nhận hủy</button>
+            <button className="booking-detail-page__button booking-detail-page__button--danger" type="submit" disabled={cancelling}>Xác nhận hủy</button>
           </div>
         </form>
       )}

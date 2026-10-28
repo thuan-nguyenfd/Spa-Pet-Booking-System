@@ -21,7 +21,7 @@ function mapService(service = {}) {
   return {
     id: serviceId,
     serviceId,
-    bookingDetailId: numericId(firstDefined(service.bookingDetailId, service.detailId, service.id)),
+    bookingDetailId: numericId(firstDefined(service.bookingDetailId, service.detailId)),
     name: firstDefined(service.name, service.serviceName, service.tendichvu, ''),
     price: numericValue(firstDefined(service.price, service.gia)),
     durationMinutes: numericValue(firstDefined(service.durationMinutes, service.duration, service.thoiluongphut)),
@@ -34,6 +34,7 @@ export function mapBookingResponse(response = {}) {
   const employeeSource = response.employee ?? {}
   const appointmentSource = response.appointment ?? {}
   const paymentSource = response.payment ?? {}
+  const rawPayments = Array.isArray(response.payments) ? response.payments : response.payment ? [response.payment] : []
   const reviewSource = response.review ?? null
   const bookingStatus = String(firstDefined(response.bookingStatus, response.status, response.trangthaidatlich, 'PENDING')).toUpperCase()
   const paymentStatus = String(firstDefined(response.paymentStatus, response.trangthaithanhtoan, 'UNPAID')).toUpperCase()
@@ -74,11 +75,18 @@ export function mapBookingResponse(response = {}) {
     totalPrice: numericValue(firstDefined(response.totalPrice, response.tongtien)),
     bookingStatus,
     paymentStatus,
+    payments: rawPayments.map((item) => ({
+      id: numericId(firstDefined(item.id, item.paymentId, item.mathanhtoan)),
+      method: firstDefined(item.method, item.paymentMethod, item.phuongthuc, null),
+      amount: numericValue(firstDefined(item.amount, item.sotien)),
+      transactionStatus: firstDefined(item.transactionStatus, item.trangthai, null),
+      paidAt: firstDefined(item.paidAt, item.thoigianthanhtoan, null),
+    })),
     payment: {
       id: numericId(firstDefined(paymentSource.id, paymentSource.paymentId, response.paymentId)),
-      method: firstDefined(paymentSource.method, paymentSource.paymentMethod, response.paymentMethod, 'CASH'),
+      method: firstDefined(paymentSource.method, paymentSource.paymentMethod, paymentSource.phuongthuc, response.paymentMethod, null),
       amount: numericValue(firstDefined(paymentSource.amount, paymentSource.paymentAmount, response.paymentAmount, response.totalPrice, response.tongtien)),
-      transactionStatus: firstDefined(paymentSource.transactionStatus, response.transactionStatus, paymentStatus === 'PAID' ? 'SUCCESS' : 'PENDING'),
+      transactionStatus: firstDefined(paymentSource.transactionStatus, paymentSource.trangthai, response.transactionStatus, null),
       paidAt: firstDefined(paymentSource.paidAt, paymentSource.ngaythanhtoan, response.paidAt, ''),
     },
     cancellationReason: firstDefined(response.cancellationReason, response.lydohuy, null),

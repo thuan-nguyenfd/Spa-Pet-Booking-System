@@ -38,16 +38,14 @@ export default function BookingDetailPage() {
     return () => { active = false }
   }, [bookingId, retryCount])
 
-  function cancelBooking(reason) {
-    setBooking((current) => current ? {
-      ...current,
-      bookingStatus: 'CANCELLED',
-      cancellationReason: reason,
-    } : current)
+  async function cancelBooking(reason) {
+    const updated = await bookingService.cancelBooking(bookingId, reason)
+    setBooking(updated)
   }
 
-  function saveReview(review) {
-    setBooking((current) => current ? { ...current, review } : current)
+  async function saveReview(review) {
+    const updated = await bookingService.reviewBooking(bookingId, review)
+    setBooking(updated)
   }
 
   return (
