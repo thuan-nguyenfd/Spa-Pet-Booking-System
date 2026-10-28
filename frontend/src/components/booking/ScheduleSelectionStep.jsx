@@ -5,6 +5,8 @@ import { addMinutesToTime, formatDuration } from '../../utils/bookingDuration.js
 import { todayIsoDate } from '../../utils/bookingDate.js'
 import checkCircle from '../../assets/icons/booking/check-circle.svg'
 import plusCircle from '../../assets/icons/booking/plus-circle.svg'
+import arrowLeft from '../../assets/icons/booking/arrow-left-short.svg'
+import arrowRight from '../../assets/icons/booking/arrow-right-short.svg'
 
 const WEEKDAYS = ['CN', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7']
 
@@ -39,8 +41,20 @@ export default function ScheduleSelectionStep({
   onSelectEmployee,
   onAvailableEmployees,
   error,
+  excludeBookingId,
+  rescheduling = false,
+  weekOffset: controlledWeekOffset,
+  onWeekChange,
+  onDateChange,
+  dateOffset,
+  showCaregiver = true,
 }) {
   const [weekOffset, setWeekOffset] = useState(0)
+  const displayedWeekOffset = controlledWeekOffset ?? weekOffset
+  const updateWeekOffset = (nextOffset) => {
+    if (onWeekChange) onWeekChange(nextOffset)
+    else setWeekOffset(nextOffset)
+  }
   const [slots, setSlots] = useState([])
   const [slotState, setSlotState] = useState('loading')
   const [staff, setStaff] = useState([])
@@ -54,7 +68,7 @@ export default function ScheduleSelectionStep({
     let current = true
     setSlotState('loading')
     setSlots([])
-    availabilityService.getAvailableSlots({ date, totalDuration }).then((availableSlots) => {
+    availabilityService.getAvailableSlots({ date, totalDuration, excludeBookingId }).then((availableSlots) => {
       if (!current) return
       setSlots(availableSlots)
       setSlotState('ready')
@@ -63,7 +77,7 @@ export default function ScheduleSelectionStep({
       if (current) setSlotState('error')
     })
     return () => { current = false }
-  }, [date, totalDuration, onSelectTime])
+  }, [date, totalDuration, onSelectTime, excludeBookingId])
 
   useEffect(() => {
     if (!date || !startTime || !endTime) {
@@ -74,7 +88,7 @@ export default function ScheduleSelectionStep({
 
     let current = true
     setStaffState('loading')
-    staffService.getAvailableStaff({ date, startTime, endTime }).then((availableStaff) => {
+    staffService.getAvailableStaff({ date, startTime, endTime, excludeBookingId }).then((availableStaff) => {
       if (!current) return
       setStaff(availableStaff)
       setStaffState('ready')
@@ -89,27 +103,27 @@ export default function ScheduleSelectionStep({
       }
     })
     return () => { current = false }
-  }, [date, startTime, endTime, onSelectEmployee, onAvailableEmployees])
+  }, [date, startTime, endTime, onSelectEmployee, onAvailableEmployees, excludeBookingId])
 
-  const visibleDates = Array.from({ length: 7 }, (_, index) => dateAtOffset(weekOffset + index))
+  const visibleDates = Array.from({ length: 7 }, (_, index) => dateAtOffset(displayedWeekOffset + index + (dateOffset ?? 0)))
   const morningSlots = slots.filter((time) => Number(time.slice(0, 2)) < 12)
   const afternoonSlots = slots.filter((time) => Number(time.slice(0, 2)) >= 12)
   const chosenEndTime = endTime || (startTime ? addMinutesToTime(startTime, totalDuration) : '')
 
   return (
     <section className="booking-step-content" aria-labelledby="schedule-step-title">
-      <div className="booking-step-heading">
-        <p className="booking-step-heading__eyebrow">Bước 3 · Lịch hẹn</p>
-        <h2 id="schedule-step-title">Chọn lúc bạn và bé ghé MEOMEO.</h2>
-        <p>Chọn ngày trước, tụi mình sẽ mở những khung giờ và chuyên viên còn trống.</p>
+      <div className={`booking-step-heading${rescheduling ? ' booking-step-heading--reschedule' : ''}`}>
+        <p className="booking-step-heading__eyebrow">{rescheduling ? 'Thời gian mới' : 'Bước 3 · Lịch hẹn'}</p>
+        <h2 id="schedule-step-title">{rescheduling ? 'Hẹn bé vào một ngày khác.' : 'Chọn lúc bạn và bé ghé MEOMEO.'}</h2>
+        <p>{rescheduling ? 'Chọn ngày, giờ và người chăm sóc bé. Mỗi buổi hẹn đều dành trọn thời gian cho bé.' : 'Chọn ngày trước, tụi mình sẽ mở những khung giờ và chuyên viên còn trống.'}</p>
       </div>
 
-      <div className="booking-schedule-section">
+      <div className={`booking-schedule-section${rescheduling ? ' booking-schedule-section--reschedule' : ''}`}>
         <div className="booking-schedule-section__title">
           <h3>Ngày bạn muốn đến</h3>
           <div className="booking-week-controls">
-            <button type="button" onClick={() => setWeekOffset((offset) => Math.max(0, offset - 7))} disabled={weekOffset === 0} aria-label="Xem tuần trước">‹</button>
-            <button type="button" onClick={() => setWeekOffset((offset) => Math.min(7, offset + 7))} disabled={weekOffset >= 7} aria-label="Xem tuần sau">›</button>
+            <button type="button" onClick={() => updateWeekOffset(Math.max(0, displayedWeekOffset - 7))} disabled={displayedWeekOffset === 0} aria-label="Xem tuần trước">{rescheduling ? <img className="booking-week-arrow booking-week-arrow--previous" src={arrowLeft} alt="" /> : '‹'}</button>
+            <button type="button" onClick={() => updateWeekOffset(Math.min(7, displayedWeekOffset + 7))} disabled={displayedWeekOffset >= 7} aria-label="Xem tuần sau">{rescheduling ? <img className="booking-week-arrow booking-week-arrow--next" src={arrowRight} alt="" /> : '›'}</button>
           </div>
         </div>
         <div className="booking-date-grid" role="group" aria-label="Chọn ngày hẹn">
@@ -123,7 +137,10 @@ export default function ScheduleSelectionStep({
                 aria-pressed={selected}
                 aria-label={`${WEEKDAYS[day.getDay()]}, ${day.getDate()} tháng ${day.getMonth() + 1}`}
                 key={isoDate}
-                onClick={() => onSelectDate(isoDate)}
+                onClick={() => {
+                  onSelectDate(isoDate)
+                  onDateChange?.(isoDate)
+                }}
               >
                 <span>{WEEKDAYS[day.getDay()]}</span>
                 <strong>{day.getDate()}</strong>
@@ -134,7 +151,7 @@ export default function ScheduleSelectionStep({
         </div>
       </div>
 
-      <div className="booking-schedule-section" aria-live="polite">
+      <div className={`booking-schedule-section${rescheduling ? ' booking-schedule-section--reschedule' : ''}`} aria-live="polite">
         <div className="booking-schedule-section__title">
           <div>
             <h3>Khung giờ còn trống</h3>
@@ -149,7 +166,7 @@ export default function ScheduleSelectionStep({
           <div className="booking-slot-empty">
             <p>Hôm nay các bé ghé đông quá rồi.</p>
             <span>Bạn thử chọn một ngày khác nhé.</span>
-            <button className="text-link" type="button" onClick={() => setWeekOffset((offset) => Math.min(7, offset + 7))}>Xem tuần tiếp theo <span aria-hidden="true">→</span></button>
+            <button className="text-link" type="button" onClick={() => updateWeekOffset(Math.min(7, displayedWeekOffset + 7))}>Xem tuần tiếp theo {rescheduling ? <img className="booking-schedule-arrow-icon" src={arrowRight} alt="" /> : <span aria-hidden="true">→</span>}</button>
           </div>
         )}
         {slotState === 'ready' && slots.length > 0 && (
@@ -183,11 +200,11 @@ export default function ScheduleSelectionStep({
         )}
       </div>
 
-      {startTime && (
-        <div className="booking-schedule-section booking-staff-section" aria-live="polite">
+      {startTime && showCaregiver && (
+        <div className={`booking-schedule-section booking-staff-section${rescheduling ? ' booking-schedule-section--reschedule' : ''}`} aria-live="polite">
           <div className="booking-schedule-section__title">
             <div>
-              <h3>Chuyên viên đồng hành</h3>
+              <h3>{rescheduling ? 'Chuyên viên còn rảnh' : 'Chuyên viên đồng hành'}</h3>
               <p>Những người có thể chăm sóc bé trọn khung giờ này.</p>
             </div>
           </div>

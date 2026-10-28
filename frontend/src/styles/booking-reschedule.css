@@ -1,0 +1,262 @@
+﻿.booking-detail-page.booking-reschedule-page {
+  --booking-detail-ground: #f8f7f3;
+  --booking-detail-ink: #28251e;
+  --booking-detail-muted: #5d584c;
+  --booking-detail-accent: #e4a932;
+  padding: 38px var(--page-gutter) 88px;
+  background: var(--booking-detail-ground);
+  font-family: var(--type-face, 'Nunito Sans', 'Segoe UI', sans-serif);
+}
+
+@media (min-width: 900px) {
+  .booking-reschedule-page .booking-detail-page__inner { position: relative; }
+  .booking-reschedule-page__header { min-height: 64px; margin-bottom: 24px; }
+  .booking-reschedule-page .reschedule-layout { grid-template-columns: minmax(0, 1.85fr) minmax(320px, .9fr); align-items: start; gap: 30px; }
+  .booking-reschedule-page .reschedule-stage { min-height: 0; }
+  .booking-reschedule-page .reschedule-receipt { position: relative; top: auto; }
+}
+
+.booking-reschedule-page :is(.booking-detail-page__code-label, .booking-detail-page__header h1, .booking-detail-page__header p) {
+  color: var(--booking-detail-ink);
+}
+.booking-reschedule-page__header h1 { font-size: clamp(29px, 3.2vw, 40px); letter-spacing: -0.035em; line-height: 1.15; }
+.booking-reschedule-page__header > div > p:last-child { display: none; }
+.booking-reschedule-page :is(.booking-action-button, .booking-reschedule-page__header) { font-family: inherit; }
+.booking-reschedule-page .booking-action-button { color: #28251e; }
+.booking-reschedule-page .booking-action-button:disabled { color: #625a4d; }
+
+.booking-reschedule-page .booking-detail-page__back {
+  margin: 0 0 22px -6px;
+  padding: 8px 10px 8px 6px;
+  border-radius: 5px;
+  color: var(--booking-detail-muted);
+  transition: color 150ms ease, background-color 150ms ease;
+}
+.booking-reschedule-page .booking-detail-page__back:hover { background: #ebe9e6; color: var(--booking-detail-ink); }
+.booking-reschedule-page .booking-detail-page__header { align-items: flex-end; }
+.booking-reschedule-page .booking-detail-page__code-label { margin-bottom: 4px; font-size: 12px; }
+.booking-reschedule-page__header { min-height: 64px; margin-bottom: 24px; }
+.booking-reschedule-page__header h1 { max-width: 30ch; font-size: 28px; font-weight: 700; }
+
+.booking-reschedule-page .reschedule-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.85fr) minmax(320px, .9fr);
+  align-items: start;
+  gap: 30px;
+}
+.booking-reschedule-page .reschedule-stage {
+  padding: 24px 30px 21px;
+  border-radius: 7px;
+  background: #fff;
+}
+.booking-reschedule-page .reschedule-fields { min-width: 0; padding: 0; border: 0; }
+.booking-reschedule-page .booking-step-heading--reschedule { margin-bottom: 19px; }
+.booking-reschedule-page .booking-step-heading--reschedule h2 {
+  max-width: 26ch;
+  color: var(--booking-detail-ink);
+  font-size: 16px;
+  font-weight: 650;
+  letter-spacing: -0.035em;
+  line-height: 1.18;
+}
+.booking-reschedule-page .booking-step-heading--reschedule > p:last-child {
+  max-width: 60ch;
+  margin-top: 8px;
+  color: var(--booking-detail-muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+.booking-reschedule-page .booking-schedule-section--reschedule {
+  padding: 12px 0;
+  border-top: 0;
+  border-bottom: 0;
+}
+.booking-reschedule-page .booking-schedule-section--reschedule:last-child { border-bottom: 0; }
+.booking-reschedule-page .booking-schedule-section--reschedule .booking-schedule-section__title { margin-bottom: 13px; }
+.booking-reschedule-page .booking-schedule-section--reschedule .booking-schedule-section__title h3 {
+  color: #28251e;
+  font-size: 16px;
+  font-weight: 600;
+}
+.booking-reschedule-page .booking-schedule-section--reschedule .booking-schedule-section__title { margin-bottom: 8px; }
+.booking-reschedule-page .booking-schedule-section--reschedule:first-of-type { padding-top: 5px; }
+.booking-reschedule-page .booking-week-controls button {
+  color: #28251e;
+}
+.booking-reschedule-page .booking-week-controls button { display: inline-grid; place-items: center; padding: 0; line-height: 0; }
+.booking-reschedule-page .booking-week-controls button img { display: block; width: 15px; height: 15px; }
+.booking-reschedule-page .booking-week-arrow--previous { transform: translateX(3px); }
+.booking-reschedule-page .booking-week-arrow--next { transform: translateX(-3px); }
+.booking-reschedule-page .booking-week-controls button:hover:not(:disabled) { border-color: #bca75d; background: #fffaf0; }
+.booking-reschedule-page .booking-date-grid { gap: 7px; }
+.booking-reschedule-page .booking-date-option {
+  min-width: 0;
+  min-height: 76px;
+  border-color: #ded9ca;
+  border-radius: 3px;
+  background: #fff;
+}
+.booking-reschedule-page .booking-date-option.is-selected {
+  border-color: #36594b; /* taste-skill-ignore: mirror the selected date outline in the supplied reference. */
+  background: #f6f1e1;
+  color: #28251e;
+}
+.booking-reschedule-page .booking-date-option.is-selected > span,
+.booking-reschedule-page .booking-date-option.is-selected small { color: #76643a; }
+.booking-reschedule-page .booking-date-option > span,
+.booking-reschedule-page .booking-date-option small { color: #766c55; }
+.booking-reschedule-page .booking-date-jump { margin-top: 12px; }
+.booking-reschedule-page .booking-date-jump > span { color: #5d584c; }
+.booking-reschedule-page .booking-date-jump input { border-color: #ddd8ca; border-radius: 3px; }
+.booking-reschedule-page .booking-duration-hint {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #625a4d;
+}
+.booking-reschedule-page .booking-time-option {
+  min-width: 75px;
+  border-color: #ddd8ca;
+  border-radius: 3px;
+  background: #fff;
+}
+.booking-reschedule-page .booking-time-option.is-selected {
+  border-color: #e4a932;
+  background: #fff3c3;
+  color: #28251e;
+}
+.booking-reschedule-page .booking-time-confirmation {
+  border-color: #e6dcc1;
+  background: #fff8dc;
+  color: #5d584c;
+}
+.booking-reschedule-page .booking-time-confirmation__time { color: #28251e; }
+.booking-reschedule-page .booking-staff-option {
+  border-color: #ded9ca;
+  border-radius: 3px;
+}
+.booking-reschedule-page .booking-staff-option.is-selected {
+  border-color: #e4a932;
+  background: #fff8dc;
+}
+
+.booking-reschedule-page .reschedule-receipt {
+  position: relative;
+  top: auto;
+  padding: 25px 27px 22px;
+  border-radius: 7px;
+  background: #f7f1dd;
+  color: #28251e;
+}
+.booking-reschedule-page .reschedule-pet {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #ded5b8; /* taste-skill-ignore: the reference separates the pet from the current appointment. */
+}
+.booking-reschedule-page .reschedule-pet .pet-avatar { width: 58px; height: 58px; }
+.booking-reschedule-page .reschedule-pet h2 { margin-bottom: 3px; font-size: 21px; }
+.booking-reschedule-page .reschedule-pet { display: flex; flex-direction: row; }
+.booking-reschedule-page .reschedule-pet p { color: #756846; font-size: 13px; }
+.booking-reschedule-page .reschedule-receipt :is(.reschedule-before, .reschedule-after) h3 {
+  margin-bottom: 7px;
+  color: #756846;
+  font-size: 13px;
+  font-weight: 600;
+}
+.booking-reschedule-page .reschedule-before { padding-top: 4px; }
+.booking-reschedule-page .reschedule-receipt section > p { color: #5d584c; font-size: 14px; }
+.booking-reschedule-page .reschedule-receipt section > strong { color: #5d584c; font-size: 21px; font-weight: 500; letter-spacing: -0.025em; }
+.booking-reschedule-page .reschedule-before > strong { font-weight: 500; }
+.booking-reschedule-page .reschedule-arrow { margin: 9px 0; color: #8a6512; font-size: 20px; }
+.booking-reschedule-page .reschedule-arrow img { display: block; width: 16px; height: 16px; }
+.booking-reschedule-page .reschedule-after {
+  padding: 15px 17px;
+  border-left: 2px solid #8a6512;
+  background: #fffdf6;
+}
+.booking-reschedule-page .reschedule-after h3 { color: #8a6512 !important; }
+.booking-reschedule-page .reschedule-after > strong { color: #28251e !important; font-size: 21px !important; font-weight: 500 !important; }
+.booking-reschedule-page .reschedule-policy { margin: 12px 0 7px; padding-top: 12px; border-top: 1px solid #ded5b8; color: #6b624c; font-size: 13px; line-height: 1.5; } /* taste-skill-ignore: separate the unchanged-booking policy from the disclosure and action, as in the reference. */
+.booking-reschedule-page .reschedule-services { padding-bottom: 15px; color: #28251e; font-size: 13px; }
+.booking-reschedule-page .reschedule-services summary { min-height: 36px; padding-top: 5px; border-top: 0; font-weight: 600; } /* taste-skill-ignore: this is a native disclosure control. */
+.booking-reschedule-page .reschedule-services ul { color: #5d584c; }
+.booking-reschedule-page .reschedule-receipt > .booking-action-button {
+  display: flex;
+  width: 100%;
+  min-height: 50px;
+  justify-content: space-between;
+  border-radius: 3px;
+  background: #fbc552;
+  color: #28251e;
+  transition: background 160ms ease, transform 160ms ease;
+}
+.booking-reschedule-page .reschedule-receipt > .booking-action-button:hover { background: #e4a932; }
+.booking-reschedule-page .reschedule-receipt > .booking-action-button:disabled { background: #fbc552; color: #76643a; }
+.booking-reschedule-page .reschedule-receipt > .booking-action-button:disabled { color: #625a4d; }
+.booking-reschedule-page .reschedule-receipt > .booking-action-button:disabled { color: #4c422e; }
+.booking-reschedule-page .reschedule-receipt > .booking-action-button:disabled { cursor: not-allowed; opacity: .82; }
+.booking-reschedule-page .reschedule-receipt > .booking-action-button { align-items: center; justify-content: center; text-align: center; }
+.booking-reschedule-page .reschedule-receipt > .booking-text-button { width: 100%; justify-content: center; margin-top: 9px; }
+.booking-reschedule-page .reschedule-helper { margin: 8px 0 0; color: #625a4d; font-size: 12px; text-align: center; }
+.booking-reschedule-page .reschedule-toast {
+  position: fixed;
+  z-index: 30;
+  top: 20px;
+  right: max(20px, calc((100vw - 1210px) / 2));
+  display: grid;
+  width: min(390px, calc(100vw - 32px));
+  grid-template-columns: 24px minmax(0, 1fr) 28px;
+  gap: 13px;
+  align-items: start;
+  padding: 17px 15px;
+  border: 1px solid #e2d8bd;
+  border-radius: 7px;
+  background: #fffdf7;
+  color: #28251e;
+  box-shadow: 0 8px 24px rgb(45 37 20 / 12%); /* taste-skill-ignore: success toast is a real overlay. */
+  animation: reschedule-toast-in 200ms ease both;
+}
+.booking-reschedule-page .reschedule-toast__mark { width: 24px; height: 24px; }
+.booking-reschedule-page .reschedule-toast strong { display: block; font-size: 15px; }
+.booking-reschedule-page .reschedule-toast p { margin: 5px 0 8px; color: #5d584c; font-size: 13px; line-height: 1.45; }
+.booking-reschedule-page .reschedule-toast a { display: inline-flex; align-items: center; gap: 5px; color: #75590e; font-size: 13px; font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.booking-reschedule-page .reschedule-toast a::after { width: 13px; height: 13px; background: url('../assets/icons/booking/arrow-right.svg') center / contain no-repeat; content: ''; }
+.booking-reschedule-page .reschedule-toast > button { width: 28px; height: 28px; border: 0; border-radius: 4px; background: transparent; color: #625a4d; font: inherit; font-size: 20px; line-height: 1; cursor: pointer; }
+.booking-reschedule-page .reschedule-toast > button:hover { background: #f0ede6; }
+.booking-reschedule-page .booking-schedule-arrow-icon { display: inline-block; width: 14px; height: 14px; vertical-align: -2px; }
+@keyframes reschedule-toast-in {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.booking-reschedule-page :is(button, a, input, summary):focus-visible {
+  outline: 3px solid #8b6700;
+  outline-offset: 3px;
+}
+
+@media (max-width: 899px) {
+  .booking-reschedule-page .reschedule-layout { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .booking-reschedule-page .reschedule-receipt { position: static; }
+}
+
+@media (max-width: 700px) {
+  .booking-detail-page.booking-reschedule-page { padding: 32px 17px 68px; }
+  .booking-reschedule-page .booking-nav { margin-bottom: 19px; }
+  .booking-reschedule-page .booking-detail-page__back { margin-bottom: 15px; }
+  .booking-reschedule-page__header { margin-bottom: 18px; }
+  .booking-reschedule-page__header h1 { font-size: 24px; }
+  .booking-reschedule-page .reschedule-stage { margin: 0; padding: 22px 18px; border-radius: 4px; }
+  .booking-reschedule-page .booking-step-heading--reschedule h2 { font-size: 22px; }
+  .booking-reschedule-page .booking-date-grid { gap: 4px; }
+  .booking-reschedule-page .booking-date-option { min-height: 75px; }
+  .booking-reschedule-page .reschedule-receipt { padding: 23px 19px; }
+  .booking-reschedule-page .reschedule-before,
+  .booking-reschedule-page .reschedule-after { display: block; width: 100%; }
+  .booking-reschedule-page .reschedule-arrow { display: block; width: auto; margin: 8px 0; transform: none; text-align: left; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .booking-reschedule-page *, .booking-reschedule-page *::before, .booking-reschedule-page *::after { scroll-behavior: auto; transition-duration: .01ms; animation-duration: .01ms; }
+}
+

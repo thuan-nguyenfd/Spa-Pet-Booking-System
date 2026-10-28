@@ -2,6 +2,7 @@ import { copyMockData, mockRequest } from './mockRequest.js'
 import { MOCK_BOOKINGS } from '../mocks/bookings.js'
 import { mapBookingResponse } from '../utils/bookingMapper.js'
 import { getTotalDuration } from '../utils/bookingDuration.js'
+import { MOCK_STAFF } from '../mocks/staff.js'
 
 const RESCHEDULE_STORAGE_KEY = 'meomeo:booking-reschedules'
 
@@ -16,7 +17,13 @@ function readRescheduleOverrides() {
 function applyRescheduleOverride(booking) {
   const override = readRescheduleOverrides()[String(booking.id)]
   return override
-    ? { ...booking, appointment: { ...booking.appointment, ...override } }
+    ? {
+      ...booking,
+      employee: override.employeeId
+        ? { ...booking.employee, id: override.employeeId, name: MOCK_STAFF.find((member) => Number(member.id) === Number(override.employeeId))?.name ?? booking.employee?.name }
+        : booking.employee,
+      appointment: { ...booking.appointment, ...override },
+    }
     : booking
 }
 
@@ -83,10 +90,11 @@ export const bookingService = {
 
     const appointment = getRescheduledAppointment(booking, requestedAppointment)
     const overrides = readRescheduleOverrides()
-    overrides[String(bookingId)] = appointment
+    overrides[String(bookingId)] = { ...appointment, employeeId: requestedAppointment.employeeId }
     window.sessionStorage.setItem(RESCHEDULE_STORAGE_KEY, JSON.stringify(overrides))
 
-    const updatedBooking = { ...booking, appointment }
+    const currentEmployee = MOCK_STAFF.find((member) => Number(member.id) === Number(requestedAppointment.employeeId))
+    const updatedBooking = { ...booking, employee: { ...booking.employee, id: requestedAppointment.employeeId, name: currentEmployee?.name ?? booking.employee?.name }, appointment }
     return mockRequest(mapBookingResponse(updatedBooking), 420)
   },
 
