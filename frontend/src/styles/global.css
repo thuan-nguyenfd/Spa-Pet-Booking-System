@@ -151,28 +151,43 @@ body:has(.meomeo-home) {
   transform: scaleX(1);
 }
 
-.primary-nav__link--cta {
+.site-header .primary-nav__link--cta {
   align-self: center;
-  padding: 9px 15px;
-  border-radius: 6px;
-  background-color: var(--meomeo-yellow);
-  color: var(--meomeo-ink);
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  gap: 18px;
+  padding: 10px 20px;
+  border: 1px solid var(--meomeo-ink);
+  border-radius: 4px;
+  background-color: var(--meomeo-ink);
+  color: #fff;
   font-weight: 700;
-  transition: background-color 180ms ease, transform 180ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  transition: background-color 180ms ease, border-color 180ms ease, transform 180ms cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 
-.primary-nav__link--cta::after {
+.site-header .primary-nav__link--cta::after {
   display: none;
 }
 
-.primary-nav__link--cta:hover {
-  background-color: var(--meomeo-yellow-deep);
-  color: var(--meomeo-ink);
+.site-header .primary-nav__link--cta:hover {
+  border-color: #3a362e;
+  background-color: #3a362e;
+  color: #fff;
   transform: translateY(-1px);
 }
 
-.primary-nav__link--cta:active {
+.site-header .primary-nav__link--cta:hover::after {
+  transform: translate(2px, -2px);
+}
+
+.site-header .primary-nav__link--cta:active {
   transform: scale(0.98);
+}
+
+.primary-nav__link--home {
+  padding-inline: 0;
+  background: transparent;
 }
 
 .site-header__actions {
@@ -856,7 +871,7 @@ body:has(.meomeo-home) {
 }
 
 .about-section {
-  background: var(--meomeo-yellow);
+  background: #f2f2ee;
   scroll-margin-top: 76px;
 }
 
@@ -1148,46 +1163,43 @@ body:has(.meomeo-home) {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .service-strip.has-entered {
-    animation: service-arrive 460ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  .services-section .home-reveal,
+  .about-section .home-reveal,
+  .reviews-section .home-reveal {
+    opacity: 0;
+    transform: translateY(22px);
   }
 
-  .reason-list li.has-entered {
-    animation: reason-arrive 440ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  .home-reveal.has-entered {
+    animation: home-content-arrive 650ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
   }
 
-  .reason-list li:nth-child(2).has-entered,
-  .review-quote:nth-child(2).has-entered {
-    animation-delay: 60ms;
+  .service-list > :nth-child(2).has-entered,
+  .reason-list > :nth-child(2).has-entered,
+  .review-list > :nth-child(2).has-entered {
+    animation-delay: 90ms;
   }
 
-  .reason-list li:nth-child(3).has-entered,
-  .review-quote:nth-child(3).has-entered {
-    animation-delay: 120ms;
-  }
-
-  .reason-list li:nth-child(4).has-entered {
+  .service-list > :nth-child(3).has-entered,
+  .reason-list > :nth-child(3).has-entered,
+  .review-list > :nth-child(3).has-entered {
     animation-delay: 180ms;
   }
 
-  .review-quote.has-entered {
-    animation: quote-arrive 480ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  .service-list > :nth-child(4).has-entered,
+  .reason-list > :nth-child(4).has-entered {
+    animation-delay: 270ms;
+  }
+
+  .services-section .section-heading > :nth-child(2).has-entered,
+  .reviews-section__heading > :nth-child(2).has-entered {
+    animation-delay: 100ms;
   }
 }
 
-@keyframes service-arrive {
-  from { opacity: 0.82; transform: translateY(18px); }
+@keyframes home-content-arrive {
+  from { opacity: 0; transform: translateY(22px); }
   to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes reason-arrive {
-  from { opacity: 0.75; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes quote-arrive {
-  from { opacity: 0.78; clip-path: inset(0 0 12% 0); }
-  to { opacity: 1; clip-path: inset(0 0 0 0); }
 }
 
 @media (max-width: 1000px) {

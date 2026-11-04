@@ -37,7 +37,7 @@
 .about-photo img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform 650ms ease; }
 .about-photo:hover img { transform: scale(1.025); }
 .about-photo figcaption { margin-top: 12px; color: var(--about-muted); font-size: 14px; line-height: 1.5; }
-.about-hero { display: grid; grid-template-columns: 1fr 1.12fr .8fr; gap: clamp(24px, 3.5vw, 64px); padding-block: 60px 100px; align-items: start; }
+.about-hero { display: grid; grid-template-columns: 1fr 1.12fr .8fr; gap: clamp(24px, 3.5vw, 64px); padding-block: 40px 48px; align-items: start; }
 .about-hero__small { width: 46%; margin-bottom: 30px !important; }
 .about-hero__small .about-photo__crop { aspect-ratio: 1; }
 .about-hero__intro > p { margin-block: 26px; max-width: 32ch; }
@@ -65,7 +65,7 @@
 .about-story__body { max-width: 54ch; }
 .about-story__body > p + p { margin-top: 20px; }
 .about-story__body blockquote { font-size: clamp(23px, 2.1vw, 31px); font-weight: 700; line-height: 1.4; letter-spacing: -.025em; margin-block: 28px; }
-.about-chapters { padding-block: 110px 80px; }
+.about-chapters { padding-block: 48px 80px; }
 .about-section-heading { display: flex; align-items: end; justify-content: space-between; gap: 35px; margin-bottom: 44px; }
 .about-section-heading p { max-width: 34ch; }
 .about-tabs__list { display: flex; position: relative; overflow-x: auto; gap: 0; padding-bottom: 13px; scrollbar-width: thin; scroll-padding-inline: 12px; }
@@ -133,7 +133,7 @@
 @keyframes about-rise { from { opacity: .1; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes about-photo-drift { from { transform: scale(1); } to { transform: scale(1.045); } }
 @media (max-width: 1050px) {
-  .about-hero { grid-template-columns: 1fr 1.2fr; gap: 28px; padding-block: 40px 70px; }
+  .about-hero { grid-template-columns: 1fr 1.2fr; gap: 28px; padding-block: 32px 40px; }
   .about-hero__aside { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 0 40px; align-items: center; }
   .about-hero__aside .about-photo { grid-row: 1 / 3; }
   .about-hero__aside > p { margin-block: 0; }
@@ -172,7 +172,7 @@
   .about-story__heading p { font-size: 19px; margin-top: 20px; }
   .about-story__photo .about-photo__crop { aspect-ratio: 1.3; }
   .about-story__body blockquote { font-size: 23px; }
-  .about-chapters { padding-block: 60px 50px; }
+  .about-chapters { padding-block: 40px 50px; }
   .about-section-heading { margin-bottom: 28px; }
   .about-tabs__list button { flex-basis: 170px; min-width: 170px; padding-inline: 14px; }
   .about-tabs__panel { padding-top: 28px; min-height: 820px; }

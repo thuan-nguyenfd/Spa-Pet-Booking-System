@@ -8,7 +8,9 @@ export default function HomePage() {
   useEffect(() => {
     if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return undefined
 
-    const items = document.querySelectorAll('.service-strip, .reason-list li, .review-quote')
+    const items = document.querySelectorAll(
+      '.services-section .section-heading > *, .service-strip, .about-section__lead, .reason-list li, .reviews-section__heading > *, .review-quote',
+    )
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return
@@ -17,7 +19,10 @@ export default function HomePage() {
       })
     }, { rootMargin: '0px 0px -10% 0px', threshold: 0.08 })
 
-    items.forEach((item) => observer.observe(item))
+    items.forEach((item) => {
+      item.classList.add('home-reveal')
+      observer.observe(item)
+    })
     return () => observer.disconnect()
   }, [])
 

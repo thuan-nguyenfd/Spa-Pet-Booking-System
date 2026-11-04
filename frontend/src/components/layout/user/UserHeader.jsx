@@ -4,10 +4,10 @@ import logoHeader from '../../../assets/brand/logoheader.png'
 import { ROUTES } from '../../../constants/routes.js'
 
 const NAV_ITEMS = [
-  { label: 'Đặt hẹn', href: ROUTES.BOOKING, route: true, cta: true },
+  { label: 'Trang chủ', href: ROUTES.HOME, route: true, home: true },
   { label: 'Dịch vụ', href: ROUTES.SERVICES, section: 'services', route: true },
   { label: 'Giới thiệu', href: ROUTES.ABOUT, section: 'about', route: true },
-  { label: 'Liên hệ', href: ROUTES.CONTACT, section: 'contact', route: true },
+  { label: 'Đặt hẹn', href: ROUTES.BOOKING, route: true, cta: true },
 ]
 
 function Chevron() {
@@ -37,6 +37,12 @@ export default function HomeHeader() {
     homeLogoNavigationRef.current = false
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [location.pathname, location.search, location.hash])
+
+  useEffect(() => {
+    if (location.pathname === ROUTES.HOME || location.pathname === ROUTES.ABOUT) {
+      window.scrollTo(0, 0)
+    }
+  }, [location.pathname])
 
   useEffect(() => {
     const ids = ['services', 'contact']
@@ -150,11 +156,23 @@ export default function HomeHeader() {
 
         <nav className={`primary-nav${menuOpen ? ' is-open' : ''}`} id="primary-menu" aria-label="Điều hướng chính">
           {NAV_ITEMS.map((item) => {
-            const className = item.cta
-              ? 'primary-nav__link primary-nav__link--cta'
-              : item.section && currentActiveSection === item.section ? 'primary-nav__link is-active' : 'primary-nav__link'
+            const className = item.home
+              ? `primary-nav__link primary-nav__link--home${location.pathname === ROUTES.HOME ? ' is-active' : ''}`
+              : item.cta
+                ? 'primary-nav__link primary-nav__link--cta'
+                : item.section && currentActiveSection === item.section ? 'primary-nav__link is-active' : 'primary-nav__link'
             return item.route ? (
-              <Link key={item.label} className={className} to={item.href} onClick={closeMobileMenu}>{item.label}</Link>
+              <Link
+                key={item.label}
+                className={className}
+                to={item.href}
+                onClick={() => {
+                  closeMobileMenu()
+                  if (item.href === ROUTES.HOME || item.href === ROUTES.ABOUT) window.scrollTo(0, 0)
+                }}
+              >
+                {item.label}
+              </Link>
             ) : (
               <a key={item.label} className={className} href={item.href} aria-current={currentActiveSection === item.section ? 'location' : undefined} onClick={() => {
                 setActiveSection(item.section)
