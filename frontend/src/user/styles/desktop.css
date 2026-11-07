@@ -1,0 +1,94 @@
+/* Desktop sizing follows the approved 90% reference without scaling the page.
+   Keep these tokens inside the User shell: Admin retains its existing styles. */
+@media (min-width: 1100px) {
+  .meomeo-home {
+    --user-header-height: 68px;
+    --user-page-max: 1350px;
+    --user-detail-max: 1090px;
+    --user-control-height: 44px;
+    font-size: 14.5px;
+    overflow: visible;
+  }
+
+  body:has(.meomeo-home) { overflow-x: visible; }
+  .meomeo-home :is(main, section, article, aside, fieldset) { min-width: 0; }
+  .meomeo-home :is(input, select, textarea) { max-width: 100%; }
+
+  .meomeo-home .site-header__row {
+    grid-template-columns: minmax(150px, 1fr) auto minmax(150px, 1fr);
+    min-height: var(--user-header-height);
+    padding-block: 9px;
+    column-gap: 24px;
+  }
+  .meomeo-home .brand__logo { height: 50px; }
+  .meomeo-home .primary-nav { gap: clamp(20px, 3vw, 42px); }
+  .meomeo-home :is(.primary-nav__link, .login-link) { font-size: 14.5px; }
+  .meomeo-home .primary-nav__link--cta { min-height: 42px; padding: 9px 18px; }
+  .meomeo-home .site-header__actions { min-width: 0; }
+  .meomeo-home .account-menu__trigger { min-height: 42px; max-width: 100%; }
+  .meomeo-home .account-menu__avatar { width: 31px; height: 31px; flex: none; }
+  .meomeo-home .account-menu__name { font-size: 13px; overflow-wrap: anywhere; }
+  .meomeo-home .account-menu__panel { width: 210px; max-width: calc(100vw - 32px); }
+  .meomeo-home .account-menu__panel :is(a, button) { min-height: 38px; font-size: 13px; }
+
+  .meomeo-home .hero {
+    --hero-min-height: clamp(540px, calc(100svh - var(--user-header-height)), 621px);
+  }
+  .meomeo-home .hero__copy { padding-block: 27px 31px; }
+  .meomeo-home .hero h1 { font-size: clamp(57px, 7.5vw, 97px); }
+  .meomeo-home .hero__intro { font-size: 27px; margin-top: 23px; }
+  .meomeo-home .hero__actions { margin-top: clamp(64px, 7.3vw, 94px); gap: 23px; }
+  .meomeo-home .button { min-height: 47px; padding-inline: 18px; font-size: 14.5px; }
+  .meomeo-home .text-link { font-size: 14.5px; }
+  .meomeo-home .hero :is(.button, .text-link) { font-size: 22px; }
+  .meomeo-home .hero .button--primary span { font-size: 24px; }
+
+  .meomeo-home .services-section {
+    max-width: 1620px;
+    padding-top: 86px;
+    padding-bottom: 95px;
+  }
+  .meomeo-home .section-heading--split { align-items: flex-end; gap: 28px; margin-bottom: 27px; }
+  .meomeo-home :is(.section-heading h2, .about-section h2, .reviews-section h2) {
+    font-size: clamp(42px, 3.6vw, 50px);
+  }
+  .meomeo-home .section-heading--split > h2 { flex: 0 1 auto; min-width: 0; }
+  .meomeo-home .section-heading--split > .services-section__intro {
+    flex: 0 1 48%;
+    min-width: 0;
+    font-size: 14.5px;
+    white-space: normal;
+  }
+  .meomeo-home .service-list { gap: 14px; }
+  .meomeo-home .service-strip { min-height: clamp(230px, 24vw, 306px); }
+  .meomeo-home .service-strip__copy { width: min(100%, 630px); padding: clamp(24px, 4vw, 49px); }
+  .meomeo-home .service-strip h3 { font-size: 32px; }
+  .meomeo-home :is(.service-strip__description, .service-strip__details, .service-strip__details a) { font-size: 14.5px; }
+  .meomeo-home .service-strip__details { gap: 9px 21px; margin-top: 18px; }
+  .meomeo-home .about-section__inner { max-width: 1620px; gap: clamp(44px, 8vw, 108px); padding-block: clamp(56px, 8vw, 99px); }
+  .meomeo-home .reason-list { gap: 34px 32px; }
+  .meomeo-home .reason-list h3 { font-size: 22px; }
+  .meomeo-home :is(.reason-list p, .section-heading > p, .about-section__lead > p, .reviews-section__heading > p) { font-size: 14.5px; }
+  .meomeo-home .reviews-section { max-width: 1620px; gap: clamp(40px, 8vw, 115px); padding-block: clamp(65px, 9vw, 113px) clamp(74px, 10vw, 126px); }
+  .meomeo-home .review-quote > p { font-size: 22px; }
+  .meomeo-home .review-list { gap: 27px; }
+
+  .meomeo-home .site-footer { margin-block-start: clamp(130px, 10vw, 162px); padding-block: 72px 20px; }
+  .meomeo-home .site-footer__pets { width: clamp(342px, 40vw, 558px); }
+  .meomeo-home :is(.site-footer__top, .site-footer__bottom, .photo-credits) { max-width: 1620px; }
+  .meomeo-home .site-footer__top { gap: clamp(38px, 7vw, 117px); padding-bottom: 40px; }
+  .meomeo-home .site-footer__brand h2 { font-size: 72px; }
+  .meomeo-home .site-footer__details { grid-template-columns: minmax(0, .8fr) minmax(0, 1.25fr) minmax(0, .95fr); gap: 23px; padding-top: 29px; }
+  .meomeo-home :is(.site-footer__brand > p:last-child, .site-footer__details h3, .site-footer__details > div, .site-footer__details address) { font-size: 14.5px; }
+  .meomeo-home :is(.site-footer__details a, .site-footer__details span) { overflow-wrap: anywhere; }
+  .meomeo-home :is(.site-footer__bottom, .photo-credits) { font-size: 13px; }
+}
+
+@media (min-width: 1100px) and (max-width: 1350px) {
+  .meomeo-home .primary-nav { gap: 26px; }
+  .meomeo-home .hero h1 { font-size: clamp(72px, 6.8vw, 92px); }
+  .meomeo-home .hero__intro { font-size: 25px; }
+  .meomeo-home .hero__actions { margin-top: 62px; }
+  .meomeo-home .section-heading--split > .services-section__intro { flex-basis: 46%; }
+  .meomeo-home .site-footer__top { grid-template-columns: minmax(0, .75fr) minmax(0, 1.25fr); gap: 42px; }
+}

@@ -851,6 +851,13 @@ body:has(.meomeo-home) {
   transition: transform 180ms ease;
 }
 
+.service-strip__details a::after {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  content: '';
+}
+
 .service-strip__details a:hover span {
   transform: translate(3px, -2px);
 }
